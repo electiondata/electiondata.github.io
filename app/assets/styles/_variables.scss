@@ -1,0 +1,16 @@
+// We use these as default colors throughout
+$base-color: #3B80D0;                   // Blue
+$text-color: #464646;             		 	// Dark Grey
+
+
+// We use these to control various font styles
+
+$base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-style: normal;
+$base-font-light: 300;
+$base-font-regular: 400;
+$base-font-bold: 700;
+$base-font-weight: $base-font-light;
+
+
+// We use this set site row's min and max width, & Media query ranges
