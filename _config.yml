@@ -1,15 +1,12 @@
-# Site settings
+source: app
 title: ElectionData
-safe:           false
-source:         app
+# To exclude inside docs/
 exclude:
   - assets/scripts
-  - assets/vendor
   - assets/styles
-  - README.md
+  - assets/graphics/collecticons
+baseurl: "../"
 timezone: America/New_York
-highlighter: false 
-
-baseurl: ""
-
-collections:
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
