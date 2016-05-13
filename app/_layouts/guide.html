@@ -1,3 +1,31 @@
 ---
 layout: default
+id: Welcome
+
+permalink: /
+
+title: Welcome
+introduction: This is a page introduction. Morbi eget mattis ipsum. Donec massa nibh, bibendum at sit amet ipsum.
 ---
+
+<section class="page page--docs">
+  <header class="page__header">
+    <div class="inner">
+      <div class="page__headline">
+      </div>
+    </div>         
+  </header>
+  <div class="page__body">
+    <div class="inner">
+
+      <!-- page aside content -->
+      {% include page-aside-content.html %}
+      <!--/ page aside content -->
+
+      <!-- page main content -->
+      <div class="page__main-content">{{ content }}</div>
+      <!--/ page main content -->
+
+    </div>
+  </div>
+</section>
