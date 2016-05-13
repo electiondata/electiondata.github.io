@@ -26,6 +26,7 @@ h1 {
 	font-size: 14px;
 	font-family: $base-font-family;
 	padding-top: 14x;
+	margin-top: 12px;
 }
 
 .navbar-content {
@@ -56,7 +57,6 @@ a {
 
 .content-intro {
 	background-color: $base-color;
-	height: 600px;
 }
 
 h2 {
@@ -67,35 +67,28 @@ h2 {
 	padding: 0;
 }
 
-/*p {
+p {
 	line-height: $base-line-height;
 	font-family: $base-font-family;
 	color: $secondary-color;
 	font-weight: $base-font-weight;
-} */
+} 
 
 .content-text {
 	position: relative;
 	margin-left: 14%;
 	width: 50%;
 	top: 28%;
-
-	p {
-		line-height: $base-line-height;
-		font-family: $base-font-family;
-		color: $secondary-color;
-		font-weight: $base-font-weight;
-	}
 }
 
 .button {
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 .bttn-content {
 	background: #133B8B;
-	margin-left: 10px;
-	padding: 10px 18px;
+	margin-right: 14px;
+	padding: 10px 28px;
 	text-align: center;
 	font-size: 12px;
 	border-radius: 4px;
@@ -104,34 +97,180 @@ h2 {
 
 /***** Data Section *******************************************/
 
+
 .content-data {
 	background: #F7F7F7;
-	height: 600px;
+	height: 650px;
 }
 
 h3{
+	color: $primary-color;
+	font-family: $base-font-family;
+	font-size: 1.75rem;
 	margin: 0;
 	padding: 0;
 }
 
 .data {
 	position: relative;
-	margin-left: 14%;
 	width: 50%;
 	margin: 0 auto;
+	padding-top: 50px;
 }
 
 .data-text {
 	text-align: center;
+	padding-top: 50px;
+
+	p {
+		color: $primary-color;
+	}
+}
+
+.card-container {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.card-container .button {
+	margin-top: 45px;
+}
+
+.data-card {
+	display: inline-block;
+	min-width: 30%;
+	color: $base-color;
+	background: #ffffff;
+	border-radius: 4px;
+	border: 1px solid #EBEBEB;
+	padding: 10px 45px 20px 45px;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-top: 8px;
+}
+
+.card-prose{
+	text-align: left;
+}
+
+.card-prose p{
+	color: $primary-color;
+	font-size: 12px;
+	font-weight: normal;
 }
 
 
+/***** Carousal *******************************************/
+
+
+/*img {
+	position: absolute;
+	width: 100%;
+	opacity: .5;
+}
+*/
+
+
+.content-usecase {
+	position: relative;
+	height: 480px;
+}
+
+.background-image {
+	position: absolute;
+	background: url("../graphics/satellite_image.png") no-repeat center center;
+	height: 480px;
+	width: 100%;
+	background-size: cover;
+	margin: 0;
+}
+
+
+.usecase-carousal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+}
+
+.carousal-header {
+	position: absolute;
+	background-color: black;
+	height: 50px;
+	width: 100%;
+	opacity: .6;
+}
+
+.carousal-text {
+	color: #ffffff;
+	position: absolute;
+	margin-left: 14%;
+	margin-top: 4px;
+	padding-top: 12px;
+}
+
+
+/*.carousal-text {
+	color: white;
+	position: relative;
+	margin-left: 14%;
+	font-weight: lighter;
+	padding-bottom: 8px;
+}*/
+
+.usecase-content {
+	position: relative;
+	margin-left: 14%;
+	width: 50%;
+	top: 33%;
+
+	h3 {
+		color: white;
+	}
+}
+
+
+/***** Use cases *******************************************/
 
 
 
+.content-contribute {
+	background-color: $tertiary-color;
+	height: 650px;
 
+		h3 {
+			text-align: center;
+			padding-top: 8%;
+		}
+}
 
+.content-container {
+	margin-top: 40px;
+	margin-left: 20%;
+	margin-right:20;
+	max-width: 800px;
+	height: 650px;
 
+}
+
+.contribute-card {
+	display: inline-block;
+	max-width: 300px;
+	margin-bottom: 40px;
+	padding: 30px;
+	vertical-align: top;
+
+		p {
+			color: $primary-color;
+		}
+}
+
+h4{
+	color: $primary-color;
+	font-family: $base-font-family;
+}
 
 
 
