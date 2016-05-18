@@ -4,7 +4,7 @@ parent: guide
 id: Getting Data
 
 subject: use
-permalink: guide/use/getdata.html
+permalink: guide/getdata/
 ---
 
 <h1>This is a commonly asked Question </h1>

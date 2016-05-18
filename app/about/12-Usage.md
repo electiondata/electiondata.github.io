@@ -4,8 +4,7 @@ parent: guide
 id: Usage
 
 subject: about
-url: /guide/about/usage/
-permalink: /guide/about/usage/
+permalink: /guide/usage/
 ---
 
 <h3>This is a commonly asked Question </h3>

@@ -4,7 +4,7 @@ parent: guide
 id: Finding Data
 
 subject: contributing
-permalink: guide/contributing/finding.html
+permalink: guide/finding/
 ---
 
 <h1>This is a commonly asked Question </h1>
