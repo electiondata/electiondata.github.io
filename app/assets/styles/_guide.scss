@@ -25,7 +25,8 @@
   font-weight: 500;
   font-size: 0.9em;
   padding-bottom:0.5em;
-  border-bottom: 3px solid rgba(255,255,255,0.2);
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  max-width:150px;
 /* Code below restricts the underline on elements to the size of the text. 
   display: table-cell;
   &:after{
@@ -56,6 +57,14 @@
   }
 }
 
+/*Style for the Resources if we want that to be separate.*/
+.page__aside-resources{
+  li{
+    a{
+    }
+  }
+}
+
 /* Style for the list item that you're currently on */
 .aside-menu-item--active{
   a:link{
@@ -75,6 +84,30 @@
 
 
 /* ==========================================================================
+   Userguide nav
+   ========================================================================== */
+
+.page__main-nav{
+  clear: both;
+}
+
+.page__main-nav--prev{
+  float: left;
+  font-size: 0.85em;
+}
+
+.page__main-nav--next{
+  float: right;
+  font-size: 0.85em;
+}
+
+.page__main-nav--totop{
+  padding: 3em 0 2em;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* ==========================================================================
    Userguide Main Content
    ========================================================================== */
 
@@ -85,10 +118,14 @@
 .page__main-container{
   width: 80%;
   display: table-cell;
-  padding: 4em 6em;
+  padding: 2em 6em;
 
   h3{
     font-weight: 300;
+    padding-top:1.5em;
+/*  padding-top: 0.75em;
+    margin-top: 0.75em; 
+    border-top: 2px solid #DDD;*/
   }
 
   p{
@@ -104,6 +141,21 @@
 
   a:hover{
     color: lighten($base-color, 20);
+  }
+
+  li{
+    margin: 1em 0;
+    line-height: 1.8em;
+    p{
+      display: inline;
+    }
+  }
+
+  ul{
+    color: #CCC;
+    p{
+      color: black;
+    }
   }
 
   @media screen and (min-width: $small-range){
@@ -135,6 +187,25 @@ figcaption{
 
 code{
   color: #AAA;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.23em;
+  font-size: 1.4em;
+  color: #CCC;
+  font-weight: 800;
+  text-align: right;
+  content: counter(item) ".";
 }
 
 /* ==========================================================================

@@ -13,7 +13,24 @@ layout: default
       <!-- page main content -->
       <section class="page__main-container">
         <div class="page__main-content">
+          <div class ="page__main-nav">
+            <div class = "page__main-nav--prev">
+              {% if page.previous != null %}
+              <a href="{{ page.previous }}">&#9665 previous</a>
+              {% endif %}
+            </div>
+            <div class = "page__main-nav--next">
+              {% if page.next != null %}
+              <a href="{{ page.next }}">next &#9655</a>
+              {% endif %}
+            </div>
+          </div>
 	      {{ content }}
+        </div>
+
+        <div class = "page__main-nav--totop">
+          <a href="">Back to Top</a>
+        </div>
         </div>
 	    </section>
       <!--/ page main content -->
