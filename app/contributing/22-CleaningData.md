@@ -1,8 +1,10 @@
 ---
 layout: guide
-parent: contributing
-id: Finding
+parent: guide
+id: Cleaning Data
 
+subject: contributing
+permalink: guide/contributing/cleaning.html
 ---
 
 <h1>This is a commonly asked Question </h1>

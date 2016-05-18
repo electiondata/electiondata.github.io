@@ -1,6 +1,9 @@
 body{
 }
 
+.bttn-content:hover {
+	background-color: #132F65;
+}
 /***** Header *******************************************/
 
 .header {
@@ -26,27 +29,39 @@ h1 {
 	font-size: 14px;
 	font-family: $base-font-family;
 	padding-top: 14x;
-	margin-top: 12px;
+	margin-top: 13px;
 }
 
 .navbar-content {
 	list-style-type: none;
 	line-height: 1.5rem;
-	font-weight: 400;
+	font-weight: 200;
 	margin: 0;
 	padding: 0;
+
+	@media screen and (max-width: 544px) {
+    font-size: 12px;
+  }
 }
 
 .navbar-title {
 	float: right;
-	padding-left: 10px;
-	margin-right: 30px;
+	margin-right: 40px;
+	@media screen and (max-width: 544px) {
+    	margin-right: 15px;
+    	padding-top: 2px;
+  }
 }
 
 a {
 	color: $secondary-color;
 	text-decoration: none;
 }
+
+.navbar-title a:hover {
+	color: $base-color;
+}
+
 
 /***** Intro Section *******************************************/
 
@@ -70,8 +85,38 @@ h2 {
 .content-text {
 	position: relative;
 	margin-left: 14%;
-	width: 50%;
+	width: 45%;
 	top: 28%;
+	padding: 10em 0em 18em;
+
+	@media screen and (max-width: 561px) {
+    width: 75%;
+    margin-left: 10%;
+
+  	}
+
+	p {
+		@media screen and (max-width: 777px) {
+    	font-size: 14px;
+  		}
+	}
+}
+
+.content-text h2 {
+	font-family: $base-font-family;
+	font-size: 1.75rem;
+	color: $secondary-color;
+	margin: 0;
+	padding: 0;
+
+	@media screen and (max-width: 777px) {
+    font-size: 22px;
+  	}
+
+  	@media screen and (max-width: 561px) {
+  	font-size: 20px;
+  	}
+
 }
 
 .button {
@@ -79,7 +124,7 @@ h2 {
 }
 
 .bttn-content {
-	background: #133B8B;
+	background: #254991;
 	margin-right: 14px;
 	padding: 10px 28px;
 	text-align: center;
@@ -92,7 +137,6 @@ h2 {
 
 .content-data {
 	background: #F7F7F7;
-	height: 650px;
 }
 
 h3{
@@ -101,13 +145,19 @@ h3{
 	font-size: 1.75rem;
 	margin: 0;
 	padding: 0;
+
+	@media screen and (max-width: 777px) {
+    font-size: 22px;
+	}
 }
 
 .data {
 	position: relative;
-	width: 50%;
 	margin: 0 auto;
-	padding-top: 50px;
+	width: 65%;
+	top: 10%;
+	padding: 4em 0 16em 0;
+
 }
 
 .data-text {
@@ -116,6 +166,10 @@ h3{
 
 	p {
 		color: $primary-color;
+
+		@media screen and (max-width: 777px) {
+    	font-size: 14px;
+  		}
 	}
 }
 
@@ -125,7 +179,7 @@ h3{
 
 .data-card {
 	display: inline-block;
-	min-width: 30%;
+	min-width: 130px;
 	color: $base-color;
 	background: #ffffff;
 	border-radius: 4px;
@@ -141,6 +195,7 @@ h3{
 }
 
 .card-prose p{
+	min-width: 120px;
 	color: $primary-color;
 	font-size: 12px;
 	font-weight: normal;
@@ -182,6 +237,42 @@ h3{
 	opacity: .9;
 }
 
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  float: right;
+  margin-top: 235px;
+  margin-right: 28px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid gray;
+}
+
+.button {
+	position: absolute;
+	padding-top: 20px;
+	margin: 0;
+	width: 100%;
+}
+
+.usecase-carousal {
+
+	.bttn-content {
+	background: none;
+	padding: 10px 28px;
+	text-align: center;
+	font-size: 12px;
+	border: 2px solid #EBEBEB;
+	}
+}
+
+.bttn-content:hover {
+	background: #132F65;
+	opacity: .8;
+}
+
+
+
 .carousal-header {
 	position: absolute;
 	background-color: black;
@@ -211,10 +302,13 @@ h3{
 	position: relative;
 	margin-left: 14%;
 	width: 50%;
-	top: 33%;
+	top: 28%;
 
 	h3 {
 		color: white;
+		@media screen and (max-width: 777px) {
+   	 	font-size: 22px;
+		}
 	}
 }
 
@@ -224,9 +318,6 @@ h3{
 
 
 .content-contribute {
-	background-color: $tertiary-color;
-	height: 650px;
-
 		h3 {
 			text-align: center;
 			padding-top: 8%;
@@ -234,11 +325,11 @@ h3{
 }
 
 .content-container {
-	margin-top: 40px;
 	margin-left: 20%;
-	margin-right:20;
+	margin-right:20%;
 	max-width: 800px;
-	height: 650px;
+	top: 10%;
+	padding: 4em 0 7em 0;
 
 }
 
@@ -246,12 +337,30 @@ h3{
 	display: inline-block;
 	max-width: 300px;
 	margin-bottom: 40px;
+	margin-top: 20px;
 	padding: 30px;
 	vertical-align: top;
 
-		p {
-			color: $primary-color;
-		}
+	p {
+		color: $primary-color;
+
+		@media screen and (max-width: 561px) {
+    	font-size: 14px;
+  		}
+	}
+}
+
+.usecase-content {
+	@media screen and (max-width: 561px) {
+    width: 75%;
+    margin-left: 10%;
+	}
+}
+
+.usecase-content p {
+	@media screen and (max-width: 777px) {
+    font-size: 14px;
+  	}
 }
 
 h4{
@@ -262,4 +371,45 @@ h4{
 .deletemeplease{
 	width:100%;
 	background-color: #ccc;
+}
+
+
+/***** Footer *******************************************/
+
+footer {
+	background-color: #F7F7F7;
+	padding: 0;
+	margin: 0;
+}
+
+.footer-content {
+	margin: 0 auto;
+	top: 10%;
+	text-align: center;
+}
+
+.footer-menu {
+	list-style-type: none;
+	font-size: 14px;
+	font-family: $base-font-family;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-menu .footer-nav {
+	display: inline-block;
+	padding: 30px 30px 15px 30px;
+}
+
+.footer-menu li a {
+	color: $primary-color;
+}
+
+.footer-content p {
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 8px;
+	margin: 0;
+	font-size: 12px;
+	color: $primary-color;
 }

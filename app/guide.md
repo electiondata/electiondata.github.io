@@ -7,18 +7,19 @@ permalink: guide/
 title: Userguide
 ---
 
-<h3>This is a commonly asked Question </h3>
+<h3>This is a Title</h3>
 
-<p>This is a detailed yet concise answer to that question to alleviate stress, find happiness, mend wounds, settle children, bring doves, relieve rain, & just generally make the world a better place. </p>
+<p>This is a detailed yet concise answer to that question to alleviate stress, find happiness, mend wounds, settle children, bring doves, relieve rain, & just generally make the world a <a href="">better place</a>. </p>
 
-<code>This is code</code>
+<code>console.log("this is code")</code>
 
-<a href="">This is a link</a>
+<a href="">This is stand alone link</a>
 
 <fig>
-	<img class="ib"  src="{{ site.baseurl }}/assets/graphics/deleteme.jpg" />
-	<figcaption>This is a captain. And also a caption.</figcaption>
-</fig>
+	<img class="ib"  src="{{ site.baseurl }}/assets/graphics/deleteme2.jpg" />
+<!-- 	<figcaption>This is a captain. And also a caption.</figcaption>
+ -->
+ </fig>
 
 <p>More text goes here, and it's gonna be exciting.</p>
 

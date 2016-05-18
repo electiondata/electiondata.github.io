@@ -22,9 +22,10 @@
 }
 
 .page__aside-title{
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 0.9em;
   padding-bottom:0.5em;
-  border-bottom: 3px solid rgba(255,255,255,0.25);
+  border-bottom: 3px solid rgba(255,255,255,0.2);
 /* Code below restricts the underline on elements to the size of the text. 
   display: table-cell;
   &:after{
@@ -40,11 +41,35 @@
 .aside-menu{
   list-style: none;
   padding: 0 0 1em;
+  font-size: 0.9em;
   li{
-    color: rgba(255,255,255,0.75);
     font-weight: 300;
     font-size: .95em;
     margin: 0 0 1em;
+    a{
+      color: rgba(255,255,255,0.65);
+      transition: color 0.15s;
+    }
+    a:hover{
+      color: rgba(255,255,255,0.85);
+    }
+  }
+}
+
+/* Style for the list item that you're currently on */
+.aside-menu-item--active{
+  a:link{
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+  }
+  a:visited{
+    color: rgba(255,255,255,1);
+  }
+  a:hover{
+    color: rgba(255,255,255,1);
+  }
+  a:active{
+    color: rgba(255,255,255,1);
   }
 }
 
@@ -60,7 +85,31 @@
 .page__main-container{
   width: 80%;
   display: table-cell;
-  padding: 4em 4em;
+  padding: 4em 6em;
+
+  h3{
+    font-weight: 300;
+  }
+
+  p{
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
+  a{
+    color: $base-color;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  a:hover{
+    color: lighten($base-color, 20);
+  }
+
+  @media screen and (min-width: $small-range){
+    margin: 4em 0;
+  }
+
 }
 
 .clearfix {
@@ -74,8 +123,18 @@
 }
 
 .ib{
-  max-width:60%;
-  border: black solid 1px;
+  max-width:100%;
+  border: #CCC solid 1px;
+  margin: 0.5em 0;
+}
+
+figcaption{
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+code{
+  color: #AAA;
 }
 
 /* ==========================================================================

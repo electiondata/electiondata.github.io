@@ -1,9 +1,10 @@
 ---
 layout: guide
-parent: About
-id: Overview
+parent: guide
+id: Adding Data
 
-permalink: guide/about/overview
+subject: contributing
+permalink: guide/contributing/adding.html
 ---
 
 <h1>This is a commonly asked Question </h1>
