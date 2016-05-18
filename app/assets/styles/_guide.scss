@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Userguide Aside
+   ========================================================================== */
+
+.ib{
+  max-width:60%;
+  border: black solid 1px;
+}
+
+.page__body{
+  display: table-cell;
+}
+
+.page-aside{
+	width: 20%;
+  height: 100%;
+	background-color: $base-color;
+  display: table-cell;
+  position: relative;
+}
+
+.bottom-section{
+  padding-top: 10em;
+}
+
+.page__main-content{
+  width: 80%;
+  display: table-cell;
+}
+
+/* ==========================================================================
+   Userguide Aside
+   ========================================================================== */
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.page{
+	min-height: 100%;
+	@extend .clearfix;
+}
