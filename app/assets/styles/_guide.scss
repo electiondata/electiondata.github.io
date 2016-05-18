@@ -2,35 +2,67 @@
    Userguide Aside
    ========================================================================== */
 
-.ib{
-  max-width:60%;
-  border: black solid 1px;
-}
-
-.page__body{
-  display: table-cell;
-}
-
 .page-aside{
 	width: 20%;
   height: 100%;
 	background-color: $base-color;
   display: table-cell;
   position: relative;
+  padding: 1.5em 3em 1.5em 1.5em;
+  color: white;
+  font-family: Roboto;
 }
 
-.bottom-section{
-  padding-top: 10em;
+.page__aside-maintitle{
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom:2em;
+  position:absolute;
+  top:1em;
 }
 
-.page__main-content{
-  width: 80%;
+.page__aside-title{
+  font-weight: 400;
+  padding-bottom:0.5em;
+  border-bottom: 3px solid rgba(255,255,255,0.25);
+/* Code below restricts the underline on elements to the size of the text. 
+  display: table-cell;
+  &:after{
+    content: "";
+    display: table-cell;
+    width: 100%;
+  }*/
+}
+
+.page__aside-category{
+}
+
+.aside-menu{
+  list-style: none;
+  padding: 0 0 1em;
+  li{
+    color: rgba(255,255,255,0.75);
+    font-weight: 300;
+    font-size: .95em;
+    margin: 0 0 1em;
+  }
+}
+
+
+/* ==========================================================================
+   Userguide Main Content
+   ========================================================================== */
+
+.page__body{
   display: table-cell;
 }
 
-/* ==========================================================================
-   Userguide Aside
-   ========================================================================== */
+.page__main-container{
+  width: 80%;
+  display: table-cell;
+  padding: 4em 4em;
+}
+
 .clearfix {
   overflow: auto;
   zoom: 1;
@@ -40,3 +72,18 @@
 	min-height: 100%;
 	@extend .clearfix;
 }
+
+.ib{
+  max-width:60%;
+  border: black solid 1px;
+}
+
+/* ==========================================================================
+   Temporary
+   ========================================================================== */
+
+.page__aside-bottom{
+  padding-top: 10em;
+}
+
+

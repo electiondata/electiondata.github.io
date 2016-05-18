@@ -10,3 +10,13 @@ timezone: America/New_York
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+collections:
+  guide/about:
+    output: true
+
+  guide/contributing:
+    output: true
+
+  guide/use:
+    output: true

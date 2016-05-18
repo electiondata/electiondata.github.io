@@ -1,5 +1,10 @@
 ---
 layout: guide
+id: guide
+
+permalink: guide/
+
+title: Userguide
 ---
 
 <h3>This is a commonly asked Question </h3>

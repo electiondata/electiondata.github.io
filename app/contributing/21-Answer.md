@@ -1,5 +1,8 @@
 ---
 layout: guide
+parent: contributing
+id: Finding
+
 ---
 
 <h1>This is a commonly asked Question </h1>

@@ -1,5 +1,8 @@
 ---
 layout: guide
+parent: using
+id: Getting
+
 ---
 
 <h1>This is a commonly asked Question </h1>

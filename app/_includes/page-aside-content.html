@@ -1,0 +1,71 @@
+<!-- {% if page.parent %}
+  {% assign for=page.parent %}
+{% else %}
+  {% assign for=page.id %}
+{% endif %}
+
+{% assign subPages = site.pages | where: 'parent', for %}
+<aside class="page-aside">
+  <h1 class="section__aside-title">Use Guide</h1>
+  {% if subPages == empty %}
+  No content
+  {% else %}
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      {% for sp in subPages %}
+        {% assign klass = "" %}
+        {% if page.url == sp.url %}
+          {% assign klass = "aside-menu-item--active" %}
+        {% endif %}
+      <li><a href="{{ site.baseurl }}{{ sp.url }}" title="View section" class="aside-menu-item {{ klass }}">{{ sp.id }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+</aside> -->
+
+
+<section class = "page-aside">
+	<div class = "page__aside-top">
+		<div class = "page__aside-maintitle">
+			User Guide
+		</div>
+		<div class = "page__aside-category">
+			<div class = "page__aside-title">About</div>
+		  <nav class="page__aside-nav" role="navigation">
+		    <ul class="aside-menu">
+		    	<li>Who we are</li>
+		    	<li>Usage</li>
+		    </ul>
+		  </nav>
+		</div>
+		<div class = "page__aside-category">
+			<div class = "page__aside-title">Contributing</div>
+		  <nav class="page__aside-nav" role="navigation">
+		    <ul class="aside-menu">
+		    	<li>Finding</li>
+		    	<li>Cleaning</li>
+		    	<li>Contributing</li>
+		    </ul>
+		  </nav>
+		</div>
+		<div class = "page__aside-category">
+			<div class = "page__aside-title">Using</div>
+			<ul class = "aside-menu">
+				<li>Getting</li>
+				<li>Using</li>
+				<li>Thinking</li>
+			</ul>
+		</div>
+	</div>
+	<div class = "page__aside-bottom">
+		<div class = "page__aside-category">
+			<div class = "page__aside-title">Resources</div>
+			<ul class = "aside-menu">
+				<li>Github</li>
+				<li>DataTool</li>
+				<li>LibreOffice</li>
+			</ul>
+		</div>
+	</div>
+</section>

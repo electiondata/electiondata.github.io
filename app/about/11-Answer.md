@@ -1,5 +1,9 @@
 ---
 layout: guide
+parent: About
+id: Overview
+
+permalink: guide/about/overview
 ---
 
 <h1>This is a commonly asked Question </h1>
