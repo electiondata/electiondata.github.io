@@ -6,21 +6,23 @@ body{
 }
 /***** Header *******************************************/
 
+.header-wrapper {
+	max-width: 80%;
+	margin: auto;
+}
+
 .header {
 	width: 100%;
 	height: 50px;
-	background-color: #133B8B;
-	opacity: .9;
+	background-color: $base-color;
 }
 
 h1 {
+	float:left;
 	font-size: 16px;
 	color: $secondary-color;
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $base-font-family;
 	font-style: normal;
-	padding-top: 14px;
-	padding-left: 20px;
-	float: left;
 	margin: 0px;
 }
 
@@ -28,8 +30,6 @@ h1 {
 	float:right;
 	font-size: 14px;
 	font-family: $base-font-family;
-	padding-top: 14x;
-	margin-top: 13px;
 }
 
 .navbar-content {
@@ -47,6 +47,7 @@ h1 {
 .navbar-title {
 	float: right;
 	margin-right: 40px;
+	
 	@media screen and (max-width: 544px) {
     	margin-right: 15px;
     	padding-top: 2px;
@@ -74,19 +75,45 @@ a {
 	background-color: $base-color;
 }
 
+.content-wrapper{
+	max-width: 80%;
+	height: 33em;
+	margin: auto;
+
+}
+/*.checkbox {
+	position: absolute;
+	margin-left: 50%;
+	background: url("../graphics/checkbox.svg") no-repeat center center;
+	height: 700px;
+	width: 60%;
+	opacity: .1;
+	background-size: cover;
+
+}*/
+
 h2 {
-	font-family: $base-font-family;
+	font-family: "Roboto Condense", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 1.75rem;
 	color: $secondary-color;
 	margin: 0;
 	padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+p {
+	line-height: $base-line-height;
+	font-family: $base-font-family;
+	color: $secondary-color;
+	font-weight: $base-font-weight;
+	font-size: $base-font-size;
+} 
+
+>>>>>>> fbb733324c3e6c82a6288c1fb80b760ee9d71cb3
 .content-text {
 	position: relative;
-	margin-left: 14%;
-	width: 45%;
-	top: 28%;
+	width: 60%;
 	padding: 10em 0em 18em;
 
 	@media screen and (max-width: 561px) {
@@ -96,6 +123,8 @@ h2 {
   	}
 
 	p {
+		color: #F7F7F7;
+		
 		@media screen and (max-width: 777px) {
     	font-size: 14px;
   		}
@@ -103,32 +132,37 @@ h2 {
 }
 
 .content-text h2 {
-	font-family: $base-font-family;
-	font-size: 1.75rem;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: $base-font-regular;
+	font-size: 1.75em;
 	color: $secondary-color;
 	margin: 0;
 	padding: 0;
 
 	@media screen and (max-width: 777px) {
-    font-size: 22px;
+    font-size: 1.8em;
   	}
 
   	@media screen and (max-width: 561px) {
-  	font-size: 20px;
+  	font-size: 1.8em;
   	}
 
 }
 
-.button {
-	margin-top: 35px;
+.content-text .button {
+	position: absolute;
+	padding-top: 35px;
+	margin: 0;
+	width: 100%;
 }
+
 
 .bttn-content {
 	background: #254991;
 	margin-right: 14px;
-	padding: 10px 28px;
+	padding: 12px 28px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 14px;
 	border-radius: 4px;
 }
 
@@ -141,13 +175,14 @@ h2 {
 
 h3{
 	color: $primary-color;
-	font-family: $base-font-family;
-	font-size: 1.75rem;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: $base-font-regular;
+	font-size: 2.25rem;
 	margin: 0;
 	padding: 0;
 
 	@media screen and (max-width: 777px) {
-    font-size: 22px;
+    font-size: 1.8em;
 	}
 }
 
@@ -192,13 +227,16 @@ h3{
 
 .card-prose{
 	text-align: left;
+	padding-top: 20px;
 }
 
 .card-prose p{
 	min-width: 120px;
+	padding-top: .5em;
 	color: $primary-color;
 	font-size: 12px;
 	font-weight: normal;
+	line-height: .5em;
 }
 
 
@@ -302,15 +340,44 @@ h3{
 	position: relative;
 	margin-left: 14%;
 	width: 50%;
-	top: 28%;
+	top: 25%;
+
+	@media screen and (max-width: 777px) {
+	width: 70%;
+	top: 22%;
+  	}
 
 	h3 {
 		color: white;
 		@media screen and (max-width: 777px) {
-   	 	font-size: 22px;
+   	 	font-size: 1.8em;
 		}
 	}
+
+	.biline {
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 1.3em; 
+		line-height: 2em;
+		margin: 0;
+		padding: 0;
+
+		@media screen and (max-width: 777px) {
+		font-size: 1.2em;
+		line-height: 1.6em;
+		width: 100%;
+  	}
+}	
+
+	p {
+		padding-bottom: 2%;
+
+		@media screen and (max-width: 777px) {
+		font-size: .75em;
+		}	
+	}
 }
+
+
 
 
 /***** Use cases *******************************************/
@@ -324,22 +391,30 @@ h3{
 		}
 }
 
-.content-container {
+/*.content-container {
 	margin-left: 20%;
 	margin-right:20%;
 	max-width: 800px;
 	top: 10%;
 	padding: 4em 0 7em 0;
 
+}*/
+
+.card-holder {
+	position: relative;
+	margin: 0 auto;
+	top: 10%;
+	padding: 2em 0 10em 0;
+	text-align: center;
 }
 
 .contribute-card {
+	position: relative;
 	display: inline-block;
 	max-width: 300px;
-	margin-bottom: 40px;
-	margin-top: 20px;
-	padding: 30px;
+	padding: 45px;
 	vertical-align: top;
+	text-align: left;
 
 	p {
 		color: $primary-color;
@@ -350,7 +425,7 @@ h3{
 	}
 }
 
-.usecase-content {
+/*.usecase-content {
 	@media screen and (max-width: 561px) {
     width: 75%;
     margin-left: 10%;
@@ -361,9 +436,11 @@ h3{
 	@media screen and (max-width: 777px) {
     font-size: 14px;
   	}
-}
+}*/
 
 h4{
+	margin: 0;
+	padding: 0;
 	color: $primary-color;
 	font-family: $base-font-family;
 }
@@ -401,15 +478,72 @@ footer {
 	padding: 30px 30px 15px 30px;
 }
 
+
+
 .footer-menu li a {
 	color: $primary-color;
 }
 
-.footer-content p {
-	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 8px;
+.footer-menu li a:hover {
+	color: $base-color;
+}
+
+.credits {
 	margin: 0;
-	font-size: 12px;
+	padding: 0;
+	text-align: center;
+	padding-bottom: 2em;
+
+}
+.credits a {
+	font-family: $base-font-family;
+	font-size: .8em;
 	color: $primary-color;
 }
+<<<<<<< HEAD
+=======
+
+.credits a:hover{
+	color: $base-color;
+}
+
+.footer-content p:hover {
+	color: $base-color;
+}
+
+.twitter {
+	background-image: url("../graphics/twitter_2.png") no-repeat center center;
+	height: 30px;
+	width: 100%;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> fbb733324c3e6c82a6288c1fb80b760ee9d71cb3
