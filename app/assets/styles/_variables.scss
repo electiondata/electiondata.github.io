@@ -6,17 +6,16 @@
    ========================================================================== */
 
 $base-color: #3B80D0;                   // Blue
-$primary-color: #000;
-$secondary-color: #000;
-$tertiary-color: #000;
-
+$primary-color: #4A4A4A;				// dark gray
+$secondary-color: #FFFFFF;				// white
+$tertiary-color: #F7F7F7;				// light gray
 $link-color: #000;
 
 
 /* Typography
    ========================================================================== */
 
-$root-font-size: 16px;
+$root-font-size: 14px;
 
 $base-font-color: tint($base-color, 8%);
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,8 +24,8 @@ $base-font-light: 300;
 $base-font-regular: 400;
 $base-font-bold: 700;
 $base-font-weight: $base-font-light;
-$base-font-size: 1rem;
-$base-line-height: 1.5;
+$base-font-size: .85em;
+$base-line-height: 1.6;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
