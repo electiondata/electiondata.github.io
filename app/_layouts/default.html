@@ -1,44 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 <!--[if lt IE 10]> <html class="lt-ie10 no-js"  lang=""> <![endif]-->
 <!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% include meta.html %}
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/main.css">
-
+    <!-- build:css /assets/styles/main.css -->
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <!-- endbuild -->
     <link rel="author" type="text/plain" href="humans.txt" />
     
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-
-    <!-- metadata for Twitter Card -->
-    <meta name="description" content="">
-    <meta itemprop="name" content="">
-    <meta itemprop="description" content="" >
-    <meta itemprop="image" content="" >
-    <meta name="twitter:card" content="" >
-    <meta name="twitter:site" content="" >
-    <meta name="twitter:title" content="" >
-    <meta name="twitter:description" content="" >
-    <meta name="twitter:creator" content="" >
-    <meta name="twitter:image" content="" >
 </head>
 
 {% include header.html %}
 
   <body>
-  
+
     {{ content }}
 
   </body>

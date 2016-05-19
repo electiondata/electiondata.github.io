@@ -100,6 +100,8 @@ h2 {
 	padding: 0;
 }
 
+<<<<<<< HEAD
+=======
 p {
 	line-height: $base-line-height;
 	font-family: $base-font-family;
@@ -108,6 +110,7 @@ p {
 	font-size: $base-font-size;
 } 
 
+>>>>>>> fbb733324c3e6c82a6288c1fb80b760ee9d71cb3
 .content-text {
 	position: relative;
 	width: 60%;
@@ -166,7 +169,6 @@ p {
 
 /***** Data Section *******************************************/
 
-
 .content-data {
 	background: #F7F7F7;
 }
@@ -204,11 +206,6 @@ h3{
     	font-size: 14px;
   		}
 	}
-}
-
-.card-container {
-	margin-top: 40px;
-	text-align: center;
 }
 
 .card-container .button {
@@ -448,7 +445,10 @@ h4{
 	font-family: $base-font-family;
 }
 
-
+.deletemeplease{
+	width:100%;
+	background-color: #ccc;
+}
 
 
 /***** Footer *******************************************/
@@ -500,6 +500,8 @@ footer {
 	font-size: .8em;
 	color: $primary-color;
 }
+<<<<<<< HEAD
+=======
 
 .credits a:hover{
 	color: $base-color;
@@ -544,3 +546,4 @@ footer {
 
 
 
+>>>>>>> fbb733324c3e6c82a6288c1fb80b760ee9d71cb3

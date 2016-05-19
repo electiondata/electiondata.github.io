@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Userguide Aside
+   ========================================================================== */
+
+.page-aside{
+	width: 15%;
+  min-width:170px;
+  height: 100%;
+	background-color: $base-color;
+  display: table-cell;
+  position: relative;
+  color: white;
+  font-family: Roboto;
+}
+
+.page__aside-maintitle{
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-bottom:2em;
+  position:absolute;
+  top:1.4em;
+}
+
+.page__aside-title{
+  font-weight: 500;
+  font-size: 0.9em;
+  padding-bottom:0.5em;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+  max-width:150px;
+/* Code below restricts the underline on elements to the size of the text. 
+  display: table-cell;
+  &:after{
+    content: "";
+    display: table-cell;
+    width: 100%;
+  }*/
+}
+
+.page__aside-category{
+}
+
+.aside-menu{
+  list-style: none;
+  padding: 0 0 0.2em;
+  font-size: 0.9em;
+  li{
+    font-weight: 300;
+    font-size: .95em;
+    margin: 0 0 1em;
+    a{
+      color: rgba(255,255,255,0.65);
+      transition: color 0.15s;
+    }
+    a:hover{
+      color: rgba(255,255,255,0.85);
+    }
+  }
+}
+
+.page__aside-top{
+  padding: 0 3em 0em 1.5em;
+}
+
+.page__aside-bottom{
+  border-top: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0,0,0,0.2);
+  margin-top: 5em;
+  padding: 1.75em 3em 0.5em 1.5em;
+}
+
+
+/*Style for the Resources if we want that to be separate.*/
+.page__aside-resources{
+  li{
+    a{
+    }
+  }
+}
+
+/* Style for the list item that you're currently on */
+.aside-menu-item--active{
+  a:link{
+    font-weight: 400;
+    color: rgba(255,255,255,1);
+  }
+  a:visited{
+    color: rgba(255,255,255,1);
+  }
+  a:hover{
+    color: rgba(255,255,255,1);
+  }
+  a:active{
+    color: rgba(255,255,255,1);
+  }
+}
+
+
+/* ==========================================================================
+   Userguide nav
+   ========================================================================== */
+
+.page__main-nav{
+  clear: both;
+}
+
+.page__main-nav--prev{
+  float: left;
+  font-size: 0.85em;
+}
+
+.page__main-nav--next{
+  float: right;
+  font-size: 0.85em;
+}
+
+.page__main-nav--totop{
+  padding: 4.5em 0 3em;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+/* ==========================================================================
+   Userguide Main Content
+   ========================================================================== */
+
+.page__body{
+  display: table-cell;
+}
+
+.page__main-container{
+  width: 80%;
+  display: table-cell;
+  padding: 2em 6em;
+
+  h3{
+    font-weight: 300;
+    padding-top:1.5em;
+  /*padding-top: 0.75em;
+    margin-top: 0.75em; 
+    border-top: 2px solid #DDD;*/
+  }
+
+  p{
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+
+  a{
+    color: $base-color;
+    font-weight: 400;
+    transition: color 0.2s;
+  }
+
+  a:hover{
+    color: lighten($base-color, 20);
+  }
+
+  li{
+    margin: 1em 0;
+    line-height: 1.8em;
+    p{
+      display: inline;
+    }
+  }
+
+  ul{
+    color: #CCC;
+    p{
+      color: black;
+    }
+  }
+
+  /* Determines indent from Numbered list*/
+  ol, ul{
+    padding-left: 2.5em;
+  }
+
+  @media screen and (min-width: $small-range){
+    margin: 4em 0;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.page{
+	min-height: 100%;
+	@extend .clearfix;
+}
+
+.ib{
+  max-width:100%;
+  border: #333 solid 1px;
+  margin: 0.5em 0;
+}
+
+figcaption{
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+code{
+  color: #AAA;
+}
+
+
+ol > li {
+  margin: 0;
+  padding: 0;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.23em;
+  font-size: 1.4em;
+  color: #CCC;
+  font-weight: 800;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+/* ==========================================================================
+   Temporary
+   ========================================================================== */

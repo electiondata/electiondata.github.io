@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<section class="page page--docs">
+  <div class="page__body">
+    <div class="inner">
+
+      <!-- page aside content -->
+      {% include page-aside-content.html %}
+      <!--/ page aside content -->
+
+      <!-- page main content -->
+      <section class="page__main-container">
+        <div class="page__main-content">
+          <div class ="page__main-nav">
+            <div class = "page__main-nav--prev">
+              {% if page.previous != null %}
+              <a href="{{ page.previous }}"><img src="{{ site.baseurl }}/assets/graphics/chevron-left.svg" width="10px"></img> previous</a>
+              {% endif %}
+            </div>
+            <div class = "page__main-nav--next">
+              {% if page.next != null %}
+              <a href="{{ page.next }}">right <img src="{{ site.baseurl }}/assets/graphics/chevron-right.svg" width="10px"></img></a>
+              {% endif %}
+            </div>
+          </div>
+	      {{ content }}
+
+        <div class = "page__main-nav--totop">
+          <a href="">Back to Top</a>
+        </div>
+        
+        </div>
+
+
+        </div>
+	    </section>
+      <!--/ page main content -->
+
+    </div>
+  </div>
+</section>
