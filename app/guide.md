@@ -2,7 +2,6 @@
 layout: guide
 id: guide
 
-url: guide/
 permalink: guide/
 
 previous: google.com
@@ -20,7 +19,7 @@ title: Userguide
 <a href="">This is stand alone link</a>
 
 <fig>
-	<img class="ib"  src="{{ site.baseurl }}assets/graphics/deleteme2.jpg" />
+	<img class="ib"  src="{{ site.baseurl }}/assets/graphics/satellite_image.png" />
 <!-- 	<figcaption>This is a captain. And also a caption.</figcaption>
  -->
  </fig>
