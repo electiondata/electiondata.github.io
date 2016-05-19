@@ -1,0 +1,19 @@
+<nav class="page__aside-nav" role="navigation">
+{% if subPages == empty %}
+No content
+{% else %}
+<nav class="section__aside-nav" role="navigation">
+  <ul class="aside-menu">
+    {% for sp in subPages %}
+    	{% if sp.subject == 'use' %}
+        {% assign klass = "" %}
+        {% if page.url == sp.url %}
+          {% assign klass = "aside-menu-item--active" %}
+        {% endif %}
+      <li class = {{ klass }}><a href="{{ site.baseurl }}/{{ sp.permalink }}" title="View section" class="aside-menu-item">{{ sp.id }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>
+{% endif %}		  
+</nav>
