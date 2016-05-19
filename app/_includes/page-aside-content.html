@@ -5,19 +5,17 @@
 {% endif %}
 
 {% assign subPages = site.pages | where: 'parent', for %}
+
 <aside class="page-aside">
 	<div class = "page__aside-top">
 		<div class = "page__aside-maintitle">
-			User Guide	
+			Use Guide	
 		</div>
 		<div class = "page__aside-category">
 			<div class = "page__aside-title">About</div>
 			{% include aside-list-maker-about.html%}
 		</div>
 
-		<div class = "page__aside-maintitle">
-			User Guide	
-		</div>
 		<div class = "page__aside-category">
 			<div class = "page__aside-title">Contributing</div>
 			{% include aside-list-maker-contributing.html%}
@@ -42,49 +40,3 @@
 	</div>
 
 </aside>
-
-<!-- 
-<section class = "page-aside">
-	<div class = "page__aside-top">
-		<div class = "page__aside-maintitle">
-			User Guide	
-		</div>
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">About</div>
-		  <nav class="page__aside-nav" role="navigation">
-		    <ul class="aside-menu">
-		    	<li>Who we are</li>
-		    	<li>Usage</li>
-		    </ul>
-		  </nav>
-		</div>
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">Contributing</div>
-		  <nav class="page__aside-nav" role="navigation">
-		    <ul class="aside-menu">
-		    	<li>Finding</li>
-		    	<li>Cleaning</li>
-		    	<li>Contributing</li>
-		    </ul>
-		  </nav>
-		</div>
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">Using</div>
-			<ul class = "aside-menu">
-				<li>Getting</li>
-				<li>Using</li>
-				<li>Thinking</li>
-			</ul>
-		</div>
-	</div>
-	<div class = "page__aside-bottom">
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">Resources</div>
-			<ul class = "aside-menu">
-				<li>Github</li>
-				<li>DataTool</li>
-				<li>LibreOffice</li>
-			</ul>
-		</div>
-	</div>
-</section> -->
