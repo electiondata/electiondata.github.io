@@ -11,20 +11,10 @@
 		<div class = "page__aside-maintitle">
 			Use Guide	
 		</div>
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">About</div>
-			{% include aside-list-maker-about.html%}
-		</div>
-
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">Contributing</div>
-			{% include aside-list-maker-contributing.html%}
-		</div>
-
-		<div class = "page__aside-category">
-			<div class = "page__aside-title">Use</div>
-			{% include aside-list-maker-use.html%}
-		</div>
+		
+			{% include aside-list-maker.html subject='About'%}
+			{% include aside-list-maker.html subject='Contributing'%}
+			{% include aside-list-maker.html subject='Use'%}
 
   </div>
 

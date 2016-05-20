@@ -3,7 +3,7 @@ layout: guide
 parent: guide
 id: Usage
 
-subject: about
+subject: About
 permalink: guide/usage/
 ---
 

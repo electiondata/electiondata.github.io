@@ -103,14 +103,35 @@
   clear: both;
 }
 
-.page__main-nav--prev{
-  float: left;
+@mixin page__main-nav($direction){
+  float: $direction;
   font-size: 0.85em;
+  position: relative;
+}
+
+@mixin collecticon-nav{
+  position: absolute;
+  top: 2px;
+}
+
+.page__main-nav--prev{
+  @include page__main-nav(left)
+  margin-left: 18px;
 }
 
 .page__main-nav--next{
-  float: right;
-  font-size: 0.85em;
+  @include page__main-nav(right)
+  margin-right: 18px;
+}
+
+.collecticon-nav-left{
+  @include collecticon-nav
+  left: -18px;
+}
+
+.collecticon-nav-right{
+  @include collecticon-nav
+  right: -18px;
 }
 
 .page__main-nav--totop{
@@ -130,7 +151,19 @@
 .page__main-container{
   width: 80%;
   display: table-cell;
+}
+
+.page__main-content{
   padding: 2em 6em;
+  max-width: 800px;
+
+  h1{
+
+  }
+
+  h2{
+
+  }
 
   h3{
     font-weight: 300;
@@ -140,9 +173,22 @@
     border-top: 2px solid #DDD;*/
   }
 
+  h4{
+
+  }
+
+  h5{
+
+  }
+
+  h6{
+
+  }
+
   p{
     font-size: 1em;
     line-height: 1.8em;
+    color: black;
   }
 
   a{
@@ -164,10 +210,16 @@
   }
 
   ul{
-    color: #CCC;
+    color: #BBB;
     p{
       color: black;
     }
+  }
+
+  img{
+    width:100%;
+    border: #333 solid 1px;
+    margin: 0.5em 0;
   }
 
   /* Determines indent from Numbered list*/
@@ -190,21 +242,36 @@
 	@extend .clearfix;
 }
 
-.ib{
-  max-width:100%;
-  border: #333 solid 1px;
-  margin: 0.5em 0;
-}
-
 figcaption{
   font-size: 0.8em;
   font-style: italic;
 }
 
+/* Handles view of code*/
 code{
-  color: #AAA;
+  font-size:0.85em;
+  background-color: #f4f4f4;
+  padding: 0.3em 0.65em 0.25em;
+  border-radius: 5px;
 }
 
+.highlight{
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 0.75em 1em;
+}
+
+blockquote{
+  border-left: 2px #DDD solid;
+  margin-left: 0;
+  padding-left: 2.4em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+hr{
+  border: 1px solid #DDD;
+}
 
 ol > li {
   margin: 0;
@@ -217,9 +284,9 @@ ol > li {
 ol > li:before {
   display: inline-block;
   width: 1em;
-  padding-right: 0.23em;
-  font-size: 1.4em;
-  color: #CCC;
+  padding-right: 0.5em;
+  font-size: 1.1em;
+  color: #BBB;
   font-weight: 800;
   text-align: right;
   content: counter(item) ".";

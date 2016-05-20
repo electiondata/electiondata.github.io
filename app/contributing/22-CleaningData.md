@@ -3,7 +3,7 @@ layout: guide
 parent: guide
 id: Cleaning Data
 
-subject: contributing
+subject: Contributing
 permalink: guide/cleaning/
 ---
 

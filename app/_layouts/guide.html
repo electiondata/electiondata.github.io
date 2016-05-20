@@ -16,12 +16,16 @@ layout: default
           <div class ="page__main-nav">
             <div class = "page__main-nav--prev">
               {% if page.previous != null %}
-              <a href="{{ page.previous }}"><img src="{{ site.baseurl }}/assets/graphics/chevron-left.svg" width="10px"></img> previous</a>
+              <a href="{{ page.previous }}">
+                <span class="collecticon collecticon-nav-left collecticons-chevron-left"></span> previous
+              </a>
               {% endif %}
             </div>
             <div class = "page__main-nav--next">
               {% if page.next != null %}
-              <a href="{{ page.next }}">right <img src="{{ site.baseurl }}/assets/graphics/chevron-right.svg" width="10px"></img></a>
+              <a href="{{ page.next }}">
+                next <span class="collecticon collecticon-nav-right collecticons-chevron-right"></span>
+              </a>
               {% endif %}
             </div>
           </div>
