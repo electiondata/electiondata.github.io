@@ -1,25 +1,25 @@
 body{
 }
 
-.bttn-content:hover {
+/*.bttn-content:hover {
 	background-color: #132F65;
-}
+}*/
 /***** Header *******************************************/
 
 .header-wrapper {
 	max-width: 80%;
 	margin: auto;
+	padding-top: 30px;
 }
 
 .header {
-	width: 100%;
 	height: 50px;
 	background-color: $base-color;
 }
 
 h1 {
 	float:left;
-	font-size: 16px;
+	font-size: 1.5em;
 	color: $secondary-color;
 	font-family: $base-font-family;
 	font-style: normal;
@@ -29,12 +29,13 @@ h1 {
 .navbar {
 	float:right;
 	font-size: 14px;
+	margin-top: 6px;
 	font-family: $base-font-family;
 }
 
 .navbar-content {
 	list-style-type: none;
-	line-height: 1.5rem;
+	line-height: 2em;
 	font-weight: 200;
 	margin: 0;
 	padding: 0;
@@ -59,8 +60,43 @@ a {
 	text-decoration: none;
 }
 
-.navbar-title a:hover {
-	color: $base-color;
+/*.navbar-title a:hover {
+	color: #133B8B;
+}*/
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  height: 3px;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 
@@ -76,6 +112,7 @@ a {
 }
 
 .content-wrapper{
+	position: relative;
 	max-width: 80%;
 	height: 33em;
 	margin: auto;
@@ -109,7 +146,7 @@ p {
 } 
 
 .content-text {
-	position: relative;
+	position: absolute;
 	width: 60%;
 	padding: 10em 0em 18em;
 
@@ -161,6 +198,13 @@ p {
 	text-align: center;
 	font-size: 14px;
 	border-radius: 4px;
+	transition: background .3s ease-in-out;
+/*   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;*/
+}
+
+.bttn-content:hover {
+	background: #072258;
 }
 
 
@@ -205,6 +249,10 @@ h3{
 	}
 }
 
+.card-container {
+	text-align: center;
+	margin-top: 40px;
+}
 .card-container .button {
 	margin-top: 45px;
 }
