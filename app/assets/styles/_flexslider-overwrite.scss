@@ -1,0 +1,100 @@
+.slides{
+	li{
+		list-style: none;
+	}
+	img{
+		width: 100%;
+	}
+}
+
+.background-image{
+	left: 0;
+}
+
+.usecase-carousal{
+	height: 500px;
+}
+
+.flexslider{
+	height: 480px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.flex-control-nav{
+	bottom: 40px;
+}
+
+.flex-direction-nav a{
+	color: white;
+	text-shadow: none;
+}
+
+.flex-control-nav{
+	z-index: 10;
+}
+
+.flex-control-nav &:before{
+	content: '';
+}
+
+/* Adjusts directional items */
+/* - - - - - - - - - - - - - - - - -  */
+
+.flex-direction-nav a:before {
+  font-size: 40px;
+  display: inline-block;
+  content: '<';
+}
+
+.flex-direction-nav a.flex-next:before {
+  content: '>';
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 2.5em;
+	@media screen and (max-width: 544px) {
+  	left: 1em;
+  }
+}
+
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 2.5em;
+	@media screen and (max-width: 544px) {
+  	right: 1em;
+  }
+}
+
+
+/* Tweaks the css for the bottom nav */
+/* - - - - - - - - - - - - - - - - -  */
+.flex-control-nav li{
+	width: 20px;
+}
+
+.flex-control-nav li a {
+  background-color: white;
+	border: 0;
+  opacity: 0.6;
+  z-index: 9999;
+	margin: 0 auto;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+	transition: background-color opacity 0.2s;
+  &:hover {
+    background-color: darken(#ccc, 18);
+  }
+}
+
+.flex-control-paging li a.flex-active{
+	background-color: $base-color;
+	opacity: 1;
+	cursor: pointer;
+	border: darken($base-color, 30) 2px solid;
+	&:hover {
+		background-color: darken($base-color, 18);
+	}
+}

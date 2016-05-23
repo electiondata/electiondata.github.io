@@ -20,3 +20,25 @@ collections:
 
   guide/use:
     output: true
+
+projects:
+  - id: 1
+    title: Afghanistan Runoff Election
+    subtitle: Charting runoff data with an eye for oddities
+    description: Results from recent runoff election are again marred by fraud and ballot stuffing, leaving Afghans and the international community looking to understand the extent of affected ballots in the preliminary results.
+    link: https://developmentseed.org/blog/2014/07/28/afghanistan-runoff-site/
+  - id: 2
+    title: Second Thing
+    subtitle: Using Open Data to map things
+    description: Results from recent runoff election are again marred by fraud and ballot stuffing, leaving Afghans and the international community looking to understand the extent of affected ballots in the preliminary results.
+    link: https://developmentseed.org/blog/2014/07/28/afghanistan-runoff-site/
+  - id: 3
+    title: Third Thing
+    subtitle: More data more open more win
+    description: Results from recent runoff election are again marred by fraud and ballot stuffing, leaving Afghans and the international community looking to understand the extent of affected ballots in the preliminary results.
+    link: https://developmentseed.org/blog/2014/07/28/afghanistan-runoff-site/
+  - id: 4
+    title: Fourth Thing
+    subtitle: Testing different content for the slider
+    description: Results from recent runoff election are again marred by fraud and ballot stuffing, leaving Afghans and the international community looking to understand the extent of affected ballots in the preliminary results.
+    link: https://developmentseed.org/blog/2014/07/28/afghanistan-runoff-site/
