@@ -1,25 +1,25 @@
 body{
 }
 
-.bttn-content:hover {
+/*.bttn-content:hover {
 	background-color: #132F65;
-}
+}*/
 /***** Header *******************************************/
 
 .header-wrapper {
 	max-width: 80%;
 	margin: auto;
+	padding-top: 30px;
 }
 
 .header {
-	width: 100%;
 	height: 50px;
 	background-color: $base-color;
 }
 
 h1 {
 	float:left;
-	font-size: 16px;
+	font-size: 1.5em;
 	color: $secondary-color;
 	font-family: $base-font-family;
 	font-style: normal;
@@ -29,18 +29,20 @@ h1 {
 .navbar {
 	float:right;
 	font-size: 14px;
+	margin-top: 6px;
 	font-family: $base-font-family;
 }
 
 .navbar-content {
 	list-style-type: none;
-	line-height: 1.5rem;
+	line-height: 2em;
 	font-weight: 200;
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 544px) {
+	@media screen and (max-width: 777px) {
     font-size: 12px;
+    display: none;
   }
 }
 
@@ -59,9 +61,105 @@ a {
 	text-decoration: none;
 }
 
-.navbar-title a:hover {
-	color: $base-color;
+/*.navbar-title a:hover {
+	color: #133B8B;
+}*/
+
+.hvr-underline-reveal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
 }
+.hvr-underline-reveal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #FFFFFF;
+  height: 3px;
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+/***** Hamburger Nav *******************************************/
+
+
+/*.rspv-menu {
+	position: relative;
+	display: inline-block;
+	top: 10px;
+}*/
+
+
+.rspv-nvbr {
+	position: relative;
+	float: right;
+	content: "";
+	background: url("../graphics/hamburger.svg");
+	top: 6px;
+	width: 24px;
+	height: 23px;
+
+	@media screen and (min-width: 777px) {
+	display: none;
+  }
+
+
+}
+
+.rspv-nvbr:hover .rspv-dropdown {
+	display: block;
+}
+
+.rspv-dropdown {
+	display: none;
+	background-color: rgba (0, 0, 0, 0);
+/*	background-color: #072258;
+*/	padding-top: 28px;
+	position: absolute;
+	right: 0;
+	width: 180px;
+}
+
+.rspv-title {
+	background-color: #072258;
+	font-size: 14px;
+	font-family: $base-font-family;
+	list-style-type: none;
+	line-height: 3em;
+	font-weight: 200;
+	margin: 0;
+	padding-left: 10px;
+	text-align: left;
+	border-bottom: 1px solid #274789;
+}
+
+.rspv-title:hover {
+	background: #133B8B;
+	transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+
 
 
 /***** Intro Section *******************************************/
@@ -76,11 +174,16 @@ a {
 }
 
 .content-wrapper{
-	max-width: 80%;
-	height: 33em;
+	width: 80%;
 	margin: auto;
 
+	@media screen and (max-width: 0, 543px) {
+    width: 90%;
+  	}
+
 }
+
+
 /*.checkbox {
 	position: absolute;
 	margin-left: 50%;
@@ -109,21 +212,26 @@ p {
 } 
 
 .content-text {
-	position: relative;
 	width: 60%;
-	padding: 10em 0em 18em;
+	padding: 8em 0em 8em;
 
-	@media screen and (max-width: 561px) {
-    width: 75%;
-    margin-left: 10%;
+	@media screen and (max-width: $large-range) {
+  	width: 75%;
+  	}
 
+  	@media screen and (max-width: $small-range) {
+    width: 80%;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+    width: 100%;
   	}
 
 	p {
 		color: #F7F7F7;
 		
-		@media screen and (max-width: 777px) {
-    	font-size: 14px;
+		@media screen and (max-width: xsmall-range) {
+    	font-size: .78em;
   		}
 	}
 }
@@ -131,28 +239,31 @@ p {
 .content-text h2 {
 	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: $base-font-regular;
-	font-size: 1.75em;
+	font-size: 1.9em;
 	color: $secondary-color;
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 777px) {
-    font-size: 1.8em;
+	@media screen and (max-width: $small-range) {
+  	font-size: 1.7em;
+  	line-height: 1.3em;
   	}
 
-  	@media screen and (max-width: 561px) {
-  	font-size: 1.8em;
+	@media screen and (max-width: $xsmall-range) {
+  	font-size: 1.4em;
+  	line-height: 1.3em;
   	}
-
 }
 
 .content-text .button {
 	position: absolute;
 	padding-top: 35px;
 	margin: 0;
-	width: 100%;
 }
 
+.button-container {
+	margin-top: 50px;
+}
 
 .bttn-content {
 	background: #254991;
@@ -160,8 +271,19 @@ p {
 	padding: 12px 28px;
 	text-align: center;
 	font-size: 14px;
+	font-weight: $base-font-light;
+	font-family: $base-font-family;
 	border-radius: 4px;
+	transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 }
+
+.bttn-content:hover {
+	background: #072258;
+}
+
+
 
 
 /***** Data Section *******************************************/
@@ -170,31 +292,45 @@ p {
 	background: #F7F7F7;
 }
 
-h3{
+.data-text h2 {
 	color: $primary-color;
 	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: $base-font-regular;
-	font-size: 2.25rem;
+	font-size: 1.9em;
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 777px) {
-    font-size: 1.8em;
-	}
+	@media screen and (max-width: $small-range) {
+  	font-size: 1.7em;
+  	line-height: 1.3em;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	font-size: 1.4em;
+  	line-height: 1.3em;
+  	}
+
 }
 
 .data {
-	position: relative;
 	margin: 0 auto;
-	width: 65%;
 	top: 10%;
-	padding: 4em 0 16em 0;
+	padding: 6em 0 8em 0;
 
 }
 
 .data-text {
 	text-align: center;
-	padding-top: 50px;
+	margin: auto;
+	max-width: 550px;
+
+	@media screen and (max-width: $small-range) {
+  	text-align: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	text-align: left;
+  	}
 
 	p {
 		color: $primary-color;
@@ -205,31 +341,47 @@ h3{
 	}
 }
 
-.card-container .button {
+.card-container {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.card-container .bttn-content {
+	display: block;
 	margin-top: 45px;
+	width: 104px;
+	margin: auto;
 }
 
 .data-card {
 	display: inline-block;
-	min-width: 130px;
+	min-width: 175px;
+	margin-top: 20px;
 	color: $base-color;
 	background: #ffffff;
 	border-radius: 4px;
 	border: 1px solid #EBEBEB;
-	padding: 10px 45px 20px 45px;
-	margin-right: 4px;
-	margin-left: 4px;
-	margin-top: 8px;
+	padding: 15px 40px 30px 40px;
 }
+
+.data-card:hover {
+	box-shadow: 3px 3px 8px #ccc;
+	transition: box-shadow .3s ease-in-out;
+	}
 
 .card-prose{
 	text-align: left;
-	padding-top: 20px;
+
+	h4 {
+	line-height: 2.5em;
+	border-bottom: 1.5px solid #DDD;
+
+	}
 }
 
 .card-prose p{
 	min-width: 120px;
-	padding-top: .5em;
+	padding-top: 1em;
 	color: $primary-color;
 	font-size: 12px;
 	font-weight: normal;
@@ -283,28 +435,38 @@ h3{
   border-left: 15px solid gray;
 }
 
-.button {
+/*.button {
 	position: absolute;
 	padding-top: 20px;
 	margin: 0;
-	width: 100%;
-}
+}*/
 
 .usecase-carousal {
 
 	.bttn-content {
-	background: none;
+	background: white;
 	padding: 10px 28px;
 	text-align: center;
 	font-size: 12px;
-	border: 2px solid #EBEBEB;
+	font-weight: 400;
+	color:#072258;
+	transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 	}
+
+	.bttn-content:hover {
+	background: #072258;
+	color: white;
+	border: 1px solid white;
 }
 
-.bttn-content:hover {
+}
+
+/*.bttn-content:hover {
 	background: #132F65;
 	opacity: .8;
-}
+}*/
 
 
 
@@ -345,9 +507,15 @@ h3{
   	}
 
 	h3 {
+		font-family:"Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: white;
+		font-size: 1.75em;
+		font-weight: 400;
+		padding-top: 0;
+		margin-bottom: 0;
+		
 		@media screen and (max-width: 777px) {
-   	 	font-size: 1.8em;
+   	 	font-size: 1.75em;
 		}
 	}
 
@@ -381,26 +549,29 @@ h3{
 
 
 
-.content-contribute {
-		h3 {
-			text-align: center;
-			padding-top: 8%;
-		}
+.card-holder {
+	h2 {
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: $base-font-regular;
+		font-size: 1.9em;
+		color: $primary-color;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		padding-top: 8%;
+
+		@media screen and (max-width: $small-range) {
+	  	text-align: left;
+	  	}
+
+		@media screen and (max-width: $xsmall-range) {
+	  	text-align: left;
+	  	}
+	}
 }
 
-/*.content-container {
-	margin-left: 20%;
-	margin-right:20%;
-	max-width: 800px;
-	top: 10%;
-	padding: 4em 0 7em 0;
-
-}*/
 
 .card-holder {
-	position: relative;
-	margin: 0 auto;
-	top: 10%;
 	padding: 2em 0 10em 0;
 	text-align: center;
 }
@@ -422,19 +593,6 @@ h3{
 	}
 }
 
-/*.usecase-content {
-	@media screen and (max-width: 561px) {
-    width: 75%;
-    margin-left: 10%;
-	}
-}
-
-.usecase-content p {
-	@media screen and (max-width: 777px) {
-    font-size: 14px;
-  	}
-}*/
-
 h4{
 	margin: 0;
 	padding: 0;
@@ -442,10 +600,6 @@ h4{
 	font-family: $base-font-family;
 }
 
-.deletemeplease{
-	width:100%;
-	background-color: #ccc;
-}
 
 
 /***** Footer *******************************************/
