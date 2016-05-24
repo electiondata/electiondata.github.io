@@ -57,19 +57,14 @@ layout: default
 	</section>
 	
 	<section class="content-usecase">
-		<figure class="background-image"></figure>
-		<div class="usecase-carousal">
-			<a href="#"><div class="arrow-right"></div></a>
-			<div class="carousal-header">
-				<span class="carousal-text">Election data use cases</span>
-			</div>
-			<div class="usecase-content">
-				<h3>Afghanistan Runoff Election</h3>
-				<p class="biline">Charting runoff data with an eye for oddities</p>		
-				<p>Results from recent runoff election are again marred by fraud and ballot stuffing, leaving Afghans and the international community looking to understand the extent of affected ballots in the preliminary results.</p>
-				<a class="bttn-content" href="#" title="usecase"> <span>View use case</span></a>
-			</div>
+		<div class = "flexslider">
+			<ul class = "slides">
 
+				{% for p in site.projects %}
+					{% include projects.html title=p.title subtitle=p.subtitle descrip=p.description link=p.link %}
+				{% endfor %}
+
+			</ul>
 		</div>
 	</section>
 
