@@ -174,7 +174,7 @@ a {
 }
 
 .content-wrapper{
-	max-width: 80%;
+	width: 80%;
 	margin: auto;
 }
 
@@ -208,7 +208,7 @@ p {
 
 .content-text {
 	width: 60%;
-	padding: 8em 0em 12em;
+	padding: 8em 0em 8em;
 
 	@media screen and (max-width: 561px) {
     width: 75%;
@@ -247,9 +247,11 @@ p {
 	position: absolute;
 	padding-top: 35px;
 	margin: 0;
-	width: 100%;
 }
 
+.button-container {
+	margin-top: 50px;
+}
 
 .bttn-content {
 	background: #254991;
@@ -257,6 +259,8 @@ p {
 	padding: 12px 28px;
 	text-align: center;
 	font-size: 14px;
+	font-weight: $base-font-light;
+	font-family: $base-font-family;
 	border-radius: 4px;
 	transition: background .3s ease-in-out;
    -moz-transition: background .25s ease-in-out;
@@ -266,6 +270,8 @@ p {
 .bttn-content:hover {
 	background: #072258;
 }
+
+
 
 
 /***** Data Section *******************************************/
@@ -290,13 +296,13 @@ h3{
 .data {
 	margin: 0 auto;
 	top: 10%;
-	padding: 4em 0 16em 0;
+	padding: 4em 0 8em 0;
 
 }
 
 .data-text {
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 15px;
 	margin: auto;
 	max-width: 550px;
 
@@ -313,8 +319,12 @@ h3{
 	text-align: center;
 	margin-top: 40px;
 }
-.card-container .button {
+
+.card-container .bttn-content {
+	display: block;
 	margin-top: 45px;
+	width: 104px;
+	margin: auto;
 }
 
 .data-card {
@@ -388,12 +398,11 @@ h3{
   border-left: 15px solid gray;
 }
 
-.button {
+/*.button {
 	position: absolute;
 	padding-top: 20px;
 	margin: 0;
-	width: 100%;
-}
+}*/
 
 .usecase-carousal {
 
