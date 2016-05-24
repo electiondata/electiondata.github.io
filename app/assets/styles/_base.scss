@@ -40,8 +40,9 @@ h1 {
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 544px) {
+	@media screen and (max-width: 777px) {
     font-size: 12px;
+    display: none;
   }
 }
 
@@ -99,6 +100,67 @@ a {
   transform: translateY(0);
 }
 
+/***** Hamburger Nav *******************************************/
+
+
+/*.rspv-menu {
+	position: relative;
+	display: inline-block;
+	top: 10px;
+}*/
+
+
+.rspv-nvbr {
+	position: relative;
+	float: right;
+	content: "";
+	background: url("../graphics/hamburger.svg");
+	top: 6px;
+	width: 24px;
+	height: 23px;
+
+	@media screen and (min-width: 777px) {
+	display: none;
+  }
+
+
+}
+
+.rspv-nvbr:hover .rspv-dropdown {
+	display: block;
+}
+
+.rspv-dropdown {
+	display: none;
+	background-color: #072258;
+	position: absolute;
+	right: 0;
+	width: 180px;
+	margin-top: 28px;
+	border-radius: 4px;
+}
+
+.rspv-title {
+	font-size: 14px;
+	font-family: $base-font-family;
+	list-style-type: none;
+	line-height: 3em;
+	font-weight: 200;
+	margin: 0;
+	padding-left: 10px;
+	text-align: left;
+	border-bottom: 1px solid #274789;
+}
+
+.rspv-title:hover {
+	background: #133B8B;
+	border-radius: 4px;
+	transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+}
+
+
 
 /***** Intro Section *******************************************/
 
@@ -112,12 +174,11 @@ a {
 }
 
 .content-wrapper{
-	position: relative;
 	max-width: 80%;
-	height: 33em;
 	margin: auto;
-
 }
+
+
 /*.checkbox {
 	position: absolute;
 	margin-left: 50%;
@@ -146,9 +207,8 @@ p {
 } 
 
 .content-text {
-	position: absolute;
 	width: 60%;
-	padding: 10em 0em 18em;
+	padding: 8em 0em 12em;
 
 	@media screen and (max-width: 561px) {
     width: 75%;
@@ -199,8 +259,8 @@ p {
 	font-size: 14px;
 	border-radius: 4px;
 	transition: background .3s ease-in-out;
-/*   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;*/
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 }
 
 .bttn-content:hover {
@@ -228,9 +288,7 @@ h3{
 }
 
 .data {
-	position: relative;
 	margin: 0 auto;
-	width: 65%;
 	top: 10%;
 	padding: 4em 0 16em 0;
 
@@ -239,6 +297,8 @@ h3{
 .data-text {
 	text-align: center;
 	padding-top: 50px;
+	margin: auto;
+	max-width: 550px;
 
 	p {
 		color: $primary-color;
@@ -259,15 +319,12 @@ h3{
 
 .data-card {
 	display: inline-block;
-	min-width: 130px;
+	min-width: 175px;
 	color: $base-color;
 	background: #ffffff;
 	border-radius: 4px;
 	border: 1px solid #EBEBEB;
-	padding: 10px 45px 20px 45px;
-	margin-right: 4px;
-	margin-left: 4px;
-	margin-top: 8px;
+	padding: 20px 48px 35px 30px;
 }
 
 .card-prose{
@@ -349,10 +406,10 @@ h3{
 	}
 }
 
-.bttn-content:hover {
+/*.bttn-content:hover {
 	background: #132F65;
 	opacity: .8;
-}
+}*/
 
 
 
