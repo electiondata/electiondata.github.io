@@ -228,7 +228,7 @@
   }
 
   @media screen and (min-width: $small-range){
-    margin: 4em 0;
+    margin: 1em 0;
   }
 }
 
@@ -293,5 +293,44 @@ ol > li:before {
 }
 
 /* ==========================================================================
-   Temporary
+   Aside Responsive Behavior Battleground
    ========================================================================== */
+.page-aside{
+    overflow-x: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  @media screen and (max-width: $small-range){
+    background-color: red;
+    left: -50%;
+    display: none;
+
+  }
+}
+
+.page__main-content{
+  @media screen and (max-width: $small-range){
+    padding: 2em;
+  }
+}
+
+.page__aside-toggle{
+  position: absolute;
+  top: 40px;
+  left: 25px;
+  width: 100px;
+  height: 70px;
+  background-color: red;
+  z-index: 99;
+}
+
+.header-width-fix{
+  width:100%;
+  display: inline-block;
+}
+
+.header{
+  height: 90px;
+}
+
+
+
+

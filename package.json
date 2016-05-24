@@ -14,6 +14,9 @@
   "bugs": {
     "url": ""
   },
+  "browser": {
+    "jquery-flexslider": "./app/assets/scripts/vendor/jquery.flexslider-2.6.0.min.js"
+  },
   "homepage": "",
   "scripts": {
     "install": "bundle install --path bundle/cache",

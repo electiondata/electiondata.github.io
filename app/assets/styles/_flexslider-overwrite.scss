@@ -42,14 +42,26 @@
 /* Adjusts directional items */
 /* - - - - - - - - - - - - - - - - -  */
 
-.flex-direction-nav a:before {
-  font-size: 40px;
-  display: inline-block;
-  content: '<';
+.flex-direction-nav a.flex-prev:before {
+	color: rgba(0,0,0,0);
+
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+
+  border-right:24px solid rgba(255,255,255,0.65); 
 }
 
 .flex-direction-nav a.flex-next:before {
-  content: '>';
+	color: rgba(0,0,0,0);
+
+  width: 0; 
+  height: 0; 
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent; 
+  
+  border-left:24px solid rgba(255,255,255,0.65); 
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
