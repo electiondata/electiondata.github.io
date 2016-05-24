@@ -132,15 +132,16 @@ a {
 
 .rspv-dropdown {
 	display: none;
-	background-color: #072258;
+	background-color: rgba (0, 0, 0, 0);
+/*	background-color: #072258;
+*/	padding-top: 28px;
 	position: absolute;
 	right: 0;
 	width: 180px;
-	margin-top: 28px;
-	border-radius: 4px;
 }
 
 .rspv-title {
+	background-color: #072258;
 	font-size: 14px;
 	font-family: $base-font-family;
 	list-style-type: none;
@@ -154,7 +155,6 @@ a {
 
 .rspv-title:hover {
 	background: #133B8B;
-	border-radius: 4px;
 	transition: background .3s ease-in-out;
    -moz-transition: background .25s ease-in-out;
    -webkit-transition: background .25s ease-in-out;
@@ -176,6 +176,11 @@ a {
 .content-wrapper{
 	width: 80%;
 	margin: auto;
+
+	@media screen and (max-width: 0, 543px) {
+    width: 90%;
+  	}
+
 }
 
 
@@ -210,17 +215,23 @@ p {
 	width: 60%;
 	padding: 8em 0em 8em;
 
-	@media screen and (max-width: 561px) {
-    width: 75%;
-    margin-left: 10%;
+	@media screen and (max-width: $large-range) {
+  	width: 75%;
+  	}
 
+  	@media screen and (max-width: $small-range) {
+    width: 80%;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+    width: 100%;
   	}
 
 	p {
 		color: #F7F7F7;
 		
-		@media screen and (max-width: 777px) {
-    	font-size: 14px;
+		@media screen and (max-width: xsmall-range) {
+    	font-size: .78em;
   		}
 	}
 }
@@ -228,19 +239,20 @@ p {
 .content-text h2 {
 	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: $base-font-regular;
-	font-size: 1.75em;
+	font-size: 1.9em;
 	color: $secondary-color;
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 777px) {
-    font-size: 1.8em;
+	@media screen and (max-width: $small-range) {
+  	font-size: 1.7em;
+  	line-height: 1.3em;
   	}
 
-  	@media screen and (max-width: 561px) {
-  	font-size: 1.8em;
+	@media screen and (max-width: $xsmall-range) {
+  	font-size: 1.4em;
+  	line-height: 1.3em;
   	}
-
 }
 
 .content-text .button {
@@ -280,31 +292,45 @@ p {
 	background: #F7F7F7;
 }
 
-h3{
+.data-text h2 {
 	color: $primary-color;
 	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: $base-font-regular;
-	font-size: 2.25rem;
+	font-size: 1.9em;
 	margin: 0;
 	padding: 0;
 
-	@media screen and (max-width: 777px) {
-    font-size: 1.8em;
-	}
+	@media screen and (max-width: $small-range) {
+  	font-size: 1.7em;
+  	line-height: 1.3em;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	font-size: 1.4em;
+  	line-height: 1.3em;
+  	}
+
 }
 
 .data {
 	margin: 0 auto;
 	top: 10%;
-	padding: 4em 0 8em 0;
+	padding: 6em 0 8em 0;
 
 }
 
 .data-text {
 	text-align: center;
-	padding-top: 15px;
 	margin: auto;
 	max-width: 550px;
+
+	@media screen and (max-width: $small-range) {
+  	text-align: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	text-align: left;
+  	}
 
 	p {
 		color: $primary-color;
@@ -317,7 +343,7 @@ h3{
 
 .card-container {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 .card-container .bttn-content {
@@ -330,21 +356,32 @@ h3{
 .data-card {
 	display: inline-block;
 	min-width: 175px;
+	margin-top: 20px;
 	color: $base-color;
 	background: #ffffff;
 	border-radius: 4px;
 	border: 1px solid #EBEBEB;
-	padding: 20px 48px 35px 30px;
+	padding: 15px 40px 30px 40px;
 }
+
+.data-card:hover {
+	box-shadow: 3px 3px 8px #ccc;
+	transition: box-shadow .3s ease-in-out;
+	}
 
 .card-prose{
 	text-align: left;
-	padding-top: 20px;
+
+	h4 {
+	line-height: 2.5em;
+	border-bottom: 1.5px solid #DDD;
+
+	}
 }
 
 .card-prose p{
 	min-width: 120px;
-	padding-top: .5em;
+	padding-top: 1em;
 	color: $primary-color;
 	font-size: 12px;
 	font-weight: normal;
@@ -407,12 +444,23 @@ h3{
 .usecase-carousal {
 
 	.bttn-content {
-	background: none;
+	background: white;
 	padding: 10px 28px;
 	text-align: center;
 	font-size: 12px;
-	border: 2px solid #EBEBEB;
+	font-weight: 400;
+	color:#072258;
+	transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
 	}
+
+	.bttn-content:hover {
+	background: #072258;
+	color: white;
+	border: 1px solid white;
+}
+
 }
 
 /*.bttn-content:hover {
@@ -459,9 +507,15 @@ h3{
   	}
 
 	h3 {
+		font-family:"Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: white;
+		font-size: 1.75em;
+		font-weight: 400;
+		padding-top: 0;
+		margin-bottom: 0;
+		
 		@media screen and (max-width: 777px) {
-   	 	font-size: 1.8em;
+   	 	font-size: 1.75em;
 		}
 	}
 
@@ -495,26 +549,29 @@ h3{
 
 
 
-.content-contribute {
-		h3 {
-			text-align: center;
-			padding-top: 8%;
-		}
+.card-holder {
+	h2 {
+		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: $base-font-regular;
+		font-size: 1.9em;
+		color: $primary-color;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		padding-top: 8%;
+
+		@media screen and (max-width: $small-range) {
+	  	text-align: left;
+	  	}
+
+		@media screen and (max-width: $xsmall-range) {
+	  	text-align: left;
+	  	}
+	}
 }
 
-/*.content-container {
-	margin-left: 20%;
-	margin-right:20%;
-	max-width: 800px;
-	top: 10%;
-	padding: 4em 0 7em 0;
-
-}*/
 
 .card-holder {
-	position: relative;
-	margin: 0 auto;
-	top: 10%;
 	padding: 2em 0 10em 0;
 	text-align: center;
 }
@@ -536,19 +593,6 @@ h3{
 	}
 }
 
-/*.usecase-content {
-	@media screen and (max-width: 561px) {
-    width: 75%;
-    margin-left: 10%;
-	}
-}
-
-.usecase-content p {
-	@media screen and (max-width: 777px) {
-    font-size: 14px;
-  	}
-}*/
-
 h4{
 	margin: 0;
 	padding: 0;
@@ -556,10 +600,6 @@ h4{
 	font-family: $base-font-family;
 }
 
-.deletemeplease{
-	width:100%;
-	background-color: #ccc;
-}
 
 
 /***** Footer *******************************************/
