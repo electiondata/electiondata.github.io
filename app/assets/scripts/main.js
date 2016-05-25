@@ -11,14 +11,3 @@ $(window).load(function() {
   	slideshowSpeed: 6000,
   });
 });
-
-
-// //<i class='ico icon collecticon-chevron-right'></i>
-// function openNav() {
-//     document.getElementById("mySidenav").style.left = "0";
-// }
-
-// /* Set the width of the side navigation to 0 */
-// function closeNav() {
-//     document.getElementById("mySidenav").style.width = "0";
-// }
