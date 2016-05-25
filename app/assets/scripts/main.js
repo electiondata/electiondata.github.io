@@ -1,5 +1,3 @@
-console.log("wow!");
-
 // import jQuery and set up definitions of it for flexslider js.
 global.$ = global.jQuery = global.jquery = require('jquery');
 require('jquery-flexslider');
