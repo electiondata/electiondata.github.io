@@ -3,7 +3,7 @@ layout: guide
 parent: guide
 id: Finding Data
 
-subject: contributing
+subject: Contributing
 permalink: guide/finding/
 ---
 

@@ -3,7 +3,7 @@ layout: guide
 parent: guide
 id: Getting Data
 
-subject: use
+subject: Use
 permalink: guide/getdata/
 ---
 

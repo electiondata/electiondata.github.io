@@ -10,21 +10,31 @@ next: google.com
 title: Userguide
 ---
 
-<h3>This is a Title</h3>
+### This is a Title
 
-<p>This is a detailed yet concise answer to that question to alleviate stress, find happiness, mend wounds, settle children, bring doves, relieve rain, & just generally make the world a <a href="">better place</a>. </p>
+---
 
-<code>console.log("this is code")</code>
+This is a detailed yet concise answer to that question to alleviate stress, find happiness, mend wounds, settle children, bring doves, relieve rain, & just generally make the world a [better place](notaurl.com).
 
-<a href="">This is stand alone link</a>
+[This is stand alone link](notaurl.com)
 
-<fig>
-	<img class="ib"  src="{{ site.baseurl }}/assets/graphics/satellite_image.png" />
-<!-- 	<figcaption>This is a captain. And also a caption.</figcaption>
- -->
- </fig>
+```console.log("this is code")```
 
-<p>More text goes here, and it's gonna be exciting.</p>
+And this `console.log("is also code")` used in a block of text.
+
+---
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+![Image Description]({{ site.baseurl }}/assets/graphics/satellite_image.png)
+
+> This is a quote. Do the following things in order to do the things you want to do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
 ### By Steps
 
