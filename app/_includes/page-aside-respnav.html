@@ -20,7 +20,7 @@
           {% if page.url == sp.url %}
             {% assign klass = "aside-menu-item--active" %}
           {% endif %}
-        <li class = {{ klass }}><a href="{{ site.baseurl }}/{{ sp.permalink }}" title="View section" class="aside-menu-item">{{ sp.id }}</a></li>
+        <a href="{{ site.baseurl }}/{{ sp.permalink }}" title="View section" class="aside-menu-item"><li class = {{ klass }}>{{ sp.id }}</li></a>
       {% endfor %}
   {% endif %}     
       </div>
