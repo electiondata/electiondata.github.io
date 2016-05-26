@@ -5,7 +5,7 @@ exclude:
   - assets/scripts
   - assets/styles
   - assets/graphics/collecticons
-baseurl: ""
+baseurl: electiondata.github.io
 timezone: America/New_York
 kramdown:
   input: GFM
