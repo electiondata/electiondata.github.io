@@ -117,7 +117,7 @@ a {
 	background: url("../graphics/hamburger.svg");
 	top: 6px;
 	width: 24px;
-	height: 23px;
+	height: 20px;
 
 	@media screen and (min-width: 777px) {
 	display: none;
@@ -515,11 +515,26 @@ p {
 	position: relative;
 	margin-left: 14%;
 	width: 50%;
-	margin-top: 10%;
+	margin-top: 12%;
 
-	@media screen and (max-width: 777px) {
-	width: 70%;
-	top: 22%;
+	@media screen and (max-width: $large-range) {
+		width: 50%;
+		margin-top: 15%;
+	}	
+
+	@media screen and (max-width: $medium-range) {
+		width: 50%;
+		margin-top: 18%;
+	}	
+
+	@media screen and (max-width: $small-range) {
+		width: 67%;
+		margin-top: 23%;
+  	}
+		
+	@media screen and (max-width: $xsmall-range) {
+		width: 67%;
+		margin-top: 30%;
   	}
 
 	h3 {
@@ -531,7 +546,7 @@ p {
 		margin-bottom: 0;
 		
 		@media screen and (max-width: 777px) {
-   	 	font-size: 1.75em;
+	   	 	font-size: 1.75em;
 		}
 	}
 
@@ -543,9 +558,9 @@ p {
 		padding: 0;
 
 		@media screen and (max-width: 777px) {
-		font-size: 1.2em;
-		line-height: 1.6em;
-		width: 100%;
+			font-size: 1.2em;
+			line-height: 1.6em;
+			width: 100%;
   	}
 }	
 
@@ -553,7 +568,7 @@ p {
 		padding-bottom: 2%;
 
 		@media screen and (max-width: 777px) {
-		font-size: .75em;
+			font-size: .75em;
 		}	
 	}
 }
