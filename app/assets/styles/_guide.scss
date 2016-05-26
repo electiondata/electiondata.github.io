@@ -62,8 +62,8 @@
 }
 
 .page__aside-bottom{
-  border-top: 2px solid rgba(0,0,0,0.2);
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-top: 2px solid rgba(0,0,0,0.3);
+  border-bottom: 2px solid rgba(0,0,0,0.3);
   margin-top: 5em;
   padding: 1.75em 3em 0.5em 1.5em;
 }
@@ -167,10 +167,10 @@
 
   h3{
     font-weight: 300;
+    font-family: 'Roboto Condensed';
+    font-size: 2em;
     padding-top:1.5em;
-  /*padding-top: 0.75em;
-    margin-top: 0.75em; 
-    border-top: 2px solid #DDD;*/
+    margin: 0;
   }
 
   h4{
@@ -189,6 +189,10 @@
     font-size: 1em;
     line-height: 1.8em;
     color: black;
+  }
+
+  strong{
+    font-weight: 700;
   }
 
   a{
@@ -271,6 +275,7 @@ blockquote{
 
 hr{
   border: 1px solid #DDD;
+  margin: 0.25em 0;
 }
 
 ol > li {
@@ -296,19 +301,37 @@ ol > li:before {
    Aside Responsive Behavior Battleground
    ========================================================================== */
 .page-aside{
-    overflow-x: hidden;
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: darken(#3B80D0, 15);
   @media screen and (max-width: $small-range){
     background-color: red;
-    left: -50%;
     display: none;
-
   }
+}
+
+.page-aside-resp{
+  width: 100%;
+  background-color: darken(#3B80D0, 15);
+  display: none;
+  @media screen and (max-width: $small-range){
+    display: block;
+  }
+}
+
+.aside-resp-nav{
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 1.1em;
+  max-width: 80%;
+  margin: 0 auto;
+  font-weight: 300;
+  padding: 1em 0;
 }
 
 .page__main-content{
   @media screen and (max-width: $small-range){
     padding: 2em;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 

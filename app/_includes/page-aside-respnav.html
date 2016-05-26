@@ -1,0 +1,40 @@
+{% if page.parent %}
+  {% assign for=page.parent %}
+{% else %}
+  {% assign for=page.id %}
+{% endif %}
+
+{% assign subPages = site.pages | where: 'parent', for %}
+
+<aside class="page-aside-resp">
+  
+  <div class="aside-resp-nav">
+    Use Guide Menu
+  </div>
+
+  <div class="page-aside-resp">
+  </div>
+
+<!--   <div class = "page__aside-top">
+    <div class = "page__aside-maintitle">
+      Use Guide 
+    </div>
+    
+      {% include aside-list-maker.html subject='About'%}
+      {% include aside-list-maker.html subject='Contributing'%}
+      {% include aside-list-maker.html subject='Use'%}
+
+  </div>
+
+  <div class = "page__aside-bottom">
+    <div class = "page__aside-category">
+      <div class = "page__aside-title">Resources</div>
+      <ul class = "page__aside-resources aside-menu">
+        <li><a href="">Github</a></li>
+        <li><a href="">LibreOffice</a></li>
+        <li><a href="">OtherTools</a></li>
+      </ul>
+    </div>
+  </div>
+ -->
+</aside>
