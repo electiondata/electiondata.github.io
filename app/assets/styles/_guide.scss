@@ -9,30 +9,24 @@
   display: table-cell;
   position: relative;
   color: white;
-  font-family: 'Roboto';
+  font-family: $tertiary-font-family;
 }
 
 .page__aside-maintitle{
+  font-family: $tertiary-font-family;
   font-size: 1.2em;
-  font-weight: 300;
+  font-weight: 800;
   padding-bottom:2em;
   position:absolute;
   top:1.4em;
 }
 
 .page__aside-title{
-  font-weight: 500;
+  font-weight: 800;
   font-size: 0.9em;
   padding-bottom:0.5em;
   border-bottom: 2px solid rgba(255,255,255,0.2);
   max-width:150px;
-/* Code below restricts the underline on elements to the size of the text. 
-  display: table-cell;
-  &:after{
-    content: "";
-    display: table-cell;
-    width: 100%;
-  }*/
 }
 
 .page__aside-category{
@@ -79,7 +73,7 @@
 /* Style for the list item that you're currently on */
 .aside-menu-item--active{
   a:link{
-    font-weight: 400;
+    font-weight: 800;
     color: rgba(255,255,255,1);
   }
   a:visited{
@@ -175,8 +169,8 @@
   }
 
   h3{
-    font-weight: 300;
-    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-family: $secondary-font-family;
     font-size: 2em;
     padding-top:1.5em;
     margin: 0;
@@ -201,7 +195,7 @@
   }
 
   strong{
-    font-weight: 700;
+    font-weight: 500;
   }
 
   a{
@@ -297,7 +291,7 @@ ol > li:before {
   padding-right: 0.5em;
   font-size: 1.1em;
   color: #BBB;
-  font-weight: 800;
+  font-weight: 500;
   text-align: right;
   content: counter(item) ".";
 }
@@ -324,11 +318,11 @@ ol > li:before {
 
 .aside-resp-nav{
   color: white;
-  font-family: 'Open Sans';
+  font-family: $base-font-family;
   font-size: 1.1em;
   max-width: 80%;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1em 0;
 }
 

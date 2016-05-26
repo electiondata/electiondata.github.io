@@ -36,7 +36,7 @@ h1 {
 .navbar-content {
 	list-style-type: none;
 	line-height: 2em;
-	font-weight: 200;
+	font-weight: 400;
 	margin: 0;
 	padding: 0;
 
@@ -146,7 +146,7 @@ a {
 	font-family: $base-font-family;
 	list-style-type: none;
 	line-height: 3em;
-	font-weight: 200;
+	font-weight: 400;
 	margin: 0;
 	padding-left: 10px;
 	text-align: left;
@@ -191,7 +191,7 @@ a {
 }*/
 
 h2 {
-	font-family: "Roboto Condense", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 	font-size: 1.75rem;
 	color: $secondary-color;
 	margin: 0;
@@ -235,7 +235,7 @@ p {
 }
 
 .content-text h2 {
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 	font-weight: $base-font-regular;
 	font-size: 1.9em;
 	color: $secondary-color;
@@ -292,7 +292,7 @@ p {
 
 .data-text h2 {
 	color: $primary-color;
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 	font-weight: $base-font-regular;
 	font-size: 1.9em;
 	margin: 0;
@@ -356,7 +356,7 @@ p {
 
 .card-container h2{
 	color:$primary-color;
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 	font-weight: 400;
 	font-size: 1.9em;
 
@@ -535,7 +535,7 @@ p {
   	}
 
 	h3 {
-		font-family:"Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 		color: white;
 		font-size: 1.75em;
 		font-weight: 400;
@@ -548,7 +548,7 @@ p {
 	}
 
 	.biline {
-		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-family: $secondary-font-family;
 		font-size: 1.3em; 
 		line-height: 2em;
 		margin: 0;
@@ -745,7 +745,7 @@ footer {
 }
 
 .subpage-header {
-	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: $secondary-font-family;
 	font-size: 1.9rem;
 	color: $primary-color;
 	text-align: center;
