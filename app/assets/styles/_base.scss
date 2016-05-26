@@ -9,7 +9,7 @@ body{
 .header-wrapper {
 	max-width: 80%;
 	margin: auto;
-	padding-top: 30px;
+	padding-top: 25px;
 }
 
 .header {
@@ -29,7 +29,7 @@ h1 {
 .navbar {
 	float:right;
 	font-size: 14px;
-	margin-top: 6px;
+	margin-top: 3px;
 	font-family: $base-font-family;
 }
 
@@ -176,11 +176,6 @@ a {
 .content-wrapper{
 	width: 80%;
 	margin: auto;
-
-	@media screen and (max-width: 0, 543px) {
-    width: 90%;
-  	}
-
 }
 
 
@@ -213,10 +208,11 @@ p {
 
 .content-text {
 	width: 60%;
-	padding: 8em 0em 8em;
+	padding: 7.5em 0em 9em;
 
 	@media screen and (max-width: $large-range) {
   	width: 75%;
+
   	}
 
   	@media screen and (max-width: $small-range) {
@@ -225,6 +221,8 @@ p {
 
 	@media screen and (max-width: $xsmall-range) {
     width: 100%;
+    padding-top: 25%;
+    padding-bottom: 30%;
   	}
 
 	p {
@@ -315,7 +313,16 @@ p {
 .data {
 	margin: 0 auto;
 	top: 10%;
-	padding: 6em 0 8em 0;
+	padding: 6em 0 2em 0;
+
+	@media screen and (max-width: $small-range) {
+  	text-align: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	padding-top: 20%;
+  	padding-bottom: 15%;
+  	}
 
 }
 
@@ -344,11 +351,32 @@ p {
 .card-container {
 	text-align: center;
 	margin-top: 20px;
+	margin-bottom:8%;
+}
+
+.card-container h2{
+	color:$primary-color;
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-size: 1.9em;
+
+	@media screen and (max-width: $medium-range) {
+	width: 80%;
+	text-align: left;
+  	}
+
+	@media screen and (max-width: $small-range) {
+	text-align: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+ 	margin-top: 3%;
+ 	text-align: left;
+  	}
 }
 
 .card-container .bttn-content {
 	display: block;
-	margin-top: 45px;
 	width: 104px;
 	margin: auto;
 }
@@ -549,31 +577,8 @@ p {
 
 
 
-.card-holder {
-	h2 {
-		font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		font-weight: $base-font-regular;
-		font-size: 1.9em;
-		color: $primary-color;
-		margin: 0;
-		padding: 0;
-		text-align: center;
-		padding-top: 8%;
-
-		@media screen and (max-width: $small-range) {
-	  	text-align: left;
-	  	}
-
-		@media screen and (max-width: $xsmall-range) {
-	  	text-align: left;
-	  	}
-	}
-}
-
-
-.card-holder {
-	padding: 2em 0 10em 0;
-	text-align: center;
+.content-container {
+	margin-top: 10%;
 }
 
 .contribute-card {
@@ -583,13 +588,55 @@ p {
 	padding: 45px;
 	vertical-align: top;
 	text-align: left;
+	
+	@media screen and (max-width: $medium-range) {
+	max-width: 100%;
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 0;
+	padding-right: 0;	
+	vertical-align: top;
+	text-align: left;
+  	}
+
+	@media screen and (max-width: $small-range) {
+	max-width: 100%;
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 0;
+	padding-right: 0;	
+	vertical-align: top;
+	text-align: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+	max-width: 100%;
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 0;
+	padding-right: 0;
+	vertical-align: top;
+	text-align: left;
+  	}
+
 
 	p {
 		color: $primary-color;
+	}
 
-		@media screen and (max-width: 561px) {
-    	font-size: 14px;
-  		}
+	.button-container {
+		float:left;
+
+	@media screen and (max-width: $small-range) {
+		margin-top: 3%;
+		float: left;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+	 	margin-top: 3%;
+	 	float: left;
+  	}
+
 	}
 }
 
@@ -666,3 +713,50 @@ footer {
 	width: 100%;
 	margin: 0;
 }
+
+/***** About-Page *******************************************/
+
+.about-intro {
+	width: 48%;
+	margin: auto;
+
+	@media screen and (max-width: $medium-range) {
+	width: 65%;
+	}
+
+	@media screen and (max-width: $small-range) {
+  	width: 75%;
+  	}
+
+	@media screen and (max-width: $xsmall-range) {
+  	width: 85%;
+  	}
+}
+
+.about-text {
+	margin-top:15%;
+	margin-bottom: 15%;
+}
+
+.about-text p {
+	color: #797979;
+	line-height: 1.95em;
+	font-size: 1em;
+}
+
+.subpage-header {
+	font-family: "Roboto Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.9rem;
+	color: $primary-color;
+	text-align: center;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+}
+
+.about-prose p {
+	margin-top: 35px;
+}
+
+
+
