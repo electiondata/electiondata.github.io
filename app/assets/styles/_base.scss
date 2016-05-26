@@ -9,7 +9,7 @@ body{
 .header-wrapper {
 	max-width: 80%;
 	margin: auto;
-	padding-top: 25px;
+	padding-top: 18px;
 }
 
 .header {
@@ -385,6 +385,7 @@ p {
 	display: inline-block;
 	min-width: 175px;
 	margin-top: 20px;
+	margin-right: 8px;
 	color: $base-color;
 	background: #ffffff;
 	border-radius: 4px;
@@ -443,7 +444,7 @@ p {
 }
 
 
-.usecase-carousal {
+.usecase-carousel {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -453,40 +454,35 @@ p {
 }
 
 .arrow-right {
-  width: 0; 
-  height: 0; 
-  float: right;
-  margin-top: 235px;
-  margin-right: 28px;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-left: 15px solid gray;
+	  width: 0; 
+	  height: 0; 
+	  float: right;
+	  margin-top: 235px;
+	  margin-right: 28px;
+	  border-top: 15px solid transparent;
+	  border-bottom: 15px solid transparent;
+	  border-left: 15px solid gray;
 }
 
-/*.button {
-	position: absolute;
-	padding-top: 20px;
-	margin: 0;
-}*/
 
-.usecase-carousal {
+.usecase-carousel {
 
 	.bttn-content {
-	background: white;
-	padding: 10px 28px;
-	text-align: center;
-	font-size: 12px;
-	font-weight: 400;
-	color:#072258;
-	transition: background .3s ease-in-out;
-   -moz-transition: background .25s ease-in-out;
-   -webkit-transition: background .25s ease-in-out;
+		background: white;
+		padding: 10px 28px;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;
+		color:#072258;
+		transition: background .3s ease-in-out;
+	   -moz-transition: background .25s ease-in-out;
+	   -webkit-transition: background .25s ease-in-out;
 	}
 
 	.bttn-content:hover {
-	background: #072258;
-	color: white;
-	border: 1px solid white;
+		background: #072258;
+		color: white;
+		border: 1px solid white;
 }
 
 }
@@ -498,7 +494,7 @@ p {
 
 
 
-.carousal-header {
+.carousel-header {
 	position: absolute;
 	background-color: black;
 	height: 50px;
@@ -506,7 +502,7 @@ p {
 	opacity: .6;
 }
 
-.carousal-text {
+.carousel-text {
 	color: #ffffff;
 	position: absolute;
 	margin-left: 14%;
@@ -515,19 +511,11 @@ p {
 }
 
 
-/*.carousal-text {
-	color: white;
-	position: relative;
-	margin-left: 14%;
-	font-weight: lighter;
-	padding-bottom: 8px;
-}*/
-
 .usecase-content {
 	position: relative;
 	margin-left: 14%;
 	width: 50%;
-	top: 25%;
+	margin-top: 10%;
 
 	@media screen and (max-width: 777px) {
 	width: 70%;
@@ -579,49 +567,69 @@ p {
 
 .content-container {
 	margin-top: 10%;
+
+	@media screen and (max-width: $medium-range) {
+		padding-top: 8%;
+		width: 75%;
+		margin: auto;
+	}
+
+	@media screen and (max-width: $small-range) {
+		padding-top: 8%;
+		width: 80%;
+		margin: auto 0;
+	}
+
+	@media screen and (max-width: $xsmall-range) {
+		padding-top: 8%;
+		width: 100%;
+		margin: auto 0;
+	}
 }
 
 .contribute-card {
-	position: relative;
-	display: inline-block;
-	max-width: 300px;
-	padding: 45px;
-	vertical-align: top;
-	text-align: left;
+		position: relative;
+		display: inline-block;
+		max-width: 300px;
+		padding: 45px;
+		vertical-align: top;
+		text-align: left;
 	
 	@media screen and (max-width: $medium-range) {
-	max-width: 100%;
-	margin: 0;
-	padding-top: 5%;
-	padding-left: 0;
-	padding-right: 0;	
-	vertical-align: top;
-	text-align: left;
+		max-width: 100%;
+		margin: 0;
+		padding-top: 5%;
+		padding-left: 0;
+		padding-right: 0;	
+		vertical-align: top;
+		text-align: left;
   	}
 
 	@media screen and (max-width: $small-range) {
-	max-width: 100%;
-	margin: 0;
-	padding-top: 5%;
-	padding-left: 0;
-	padding-right: 0;	
-	vertical-align: top;
-	text-align: left;
+		max-width: 100%;
+		margin: 0;
+		padding-top: 5%;
+		padding-left: 0;
+		padding-right: 0;	
+		vertical-align: top;
+		text-align: left;
   	}
 
 	@media screen and (max-width: $xsmall-range) {
-	max-width: 100%;
-	margin: 0;
-	padding-top: 5%;
-	padding-left: 0;
-	padding-right: 0;
-	vertical-align: top;
-	text-align: left;
+		max-width: 100%;
+		margin: 0;
+		padding-top: 6%;
+		padding-left: 0;
+		padding-right: 0;
+		vertical-align: top;
+		text-align: left;
   	}
 
 
 	p {
 		color: $primary-color;
+		padding: 0;
+		margin: 0;
 	}
 
 	.button-container {
@@ -647,6 +655,11 @@ h4{
 	font-family: $base-font-family;
 }
 
+.button-container-usecase {
+	margin-top: 20px;
+	float: left;
+}
+
 
 
 /***** Footer *******************************************/
@@ -665,7 +678,7 @@ footer {
 
 .footer-menu {
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 22px;
 	font-family: $base-font-family;
 	margin: 0;
 	padding: 0;
@@ -673,7 +686,7 @@ footer {
 
 .footer-menu .footer-nav {
 	display: inline-block;
-	padding: 30px 30px 15px 30px;
+	padding: 24px 30px 12px 24px;
 }
 
 
