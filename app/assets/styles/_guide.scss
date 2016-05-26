@@ -1,7 +1,6 @@
 /* ==========================================================================
    Userguide Aside
    ========================================================================== */
-
 .page-aside{
 	width: 15%;
   min-width:170px;
@@ -10,30 +9,23 @@
   display: table-cell;
   position: relative;
   color: white;
-  font-family: Roboto;
+  font-family: $tertiary-font-family;
 }
 
 .page__aside-maintitle{
+  font-family: $tertiary-font-family;
   font-size: 1.2em;
-  font-weight: 300;
-  padding-bottom:2em;
+  font-weight: 800;
   position:absolute;
   top:1.4em;
 }
 
 .page__aside-title{
-  font-weight: 500;
+  font-weight: 800;
   font-size: 0.9em;
   padding-bottom:0.5em;
   border-bottom: 2px solid rgba(255,255,255,0.2);
   max-width:150px;
-/* Code below restricts the underline on elements to the size of the text. 
-  display: table-cell;
-  &:after{
-    content: "";
-    display: table-cell;
-    width: 100%;
-  }*/
 }
 
 .page__aside-category{
@@ -80,7 +72,7 @@
 /* Style for the list item that you're currently on */
 .aside-menu-item--active{
   a:link{
-    font-weight: 400;
+    font-weight: 800;
     color: rgba(255,255,255,1);
   }
   a:visited{
@@ -98,6 +90,75 @@
 /* ==========================================================================
    Userguide nav
    ========================================================================== */
+.header-wrapper__guide{
+  margin-right: 10%;
+  margin-left: 1.5em;
+  padding-top: 18px;
+  @media screen and (max-width: $small-range){
+    margin: 0 auto;
+    max-width: 80%;
+  } 
+}
+
+.aside-resp-nav{
+  overflow: hidden;
+  cursor: pointer;
+  i{
+    float:left;
+    padding-top: 5px;
+    margin-left: 14px;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in;
+  }
+  &:hover{
+    .aside-resp-menu{
+      display:block;
+    }
+    i{
+      padding-top: 6px;
+      margin-left: 18px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    }
+  }
+}
+
+.aside-resp-menu{
+  display: none;
+  clear:both;
+}
+
+.aside-resp-menuitems{
+  position: absolute;
+  width: 100%;
+  background-color: #072258;
+  left: 0;
+  z-index: 99;
+  text-align: center;
+  margin-top:17px;
+  li{
+  font-size: 0.8em;
+  font-weight: 300;
+  display:block;
+  padding: 1.4em;
+  border-bottom: 1px solid #274789;
+  transition: background .3s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+  &:hover{
+    background: #133B8B;
+    }
+  }
+}
+
+.aside-resp-title{
+  float: left;
+}
 
 .page__main-nav{
   clear: both;
@@ -144,6 +205,14 @@
    Userguide Main Content
    ========================================================================== */
 
+.page__main-pusher{
+  padding-top: 2.5em;
+}
+
+.page__aside-pusher{
+  padding-top: 4em;
+}
+
 .page__body{
   display: table-cell;
 }
@@ -166,11 +235,11 @@
   }
 
   h3{
-    font-weight: 300;
-    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-family: $secondary-font-family;
     font-size: 2em;
-    padding-top:1.5em;
     margin: 0;
+    line-height: 0.9em;
   }
 
   h4{
@@ -192,7 +261,7 @@
   }
 
   strong{
-    font-weight: 700;
+    font-weight: 500;
   }
 
   a{
@@ -229,10 +298,6 @@
   /* Determines indent from Numbered list*/
   ol, ul{
     padding-left: 2.5em;
-  }
-
-  @media screen and (min-width: $small-range){
-    margin: 1em 0;
   }
 }
 
@@ -275,7 +340,7 @@ blockquote{
 
 hr{
   border: 1px solid #DDD;
-  margin: 0.25em 0;
+  margin: 0.6em 0 1em;
 }
 
 ol > li {
@@ -292,7 +357,7 @@ ol > li:before {
   padding-right: 0.5em;
   font-size: 1.1em;
   color: #BBB;
-  font-weight: 800;
+  font-weight: 500;
   text-align: right;
   content: counter(item) ".";
 }
@@ -319,11 +384,11 @@ ol > li:before {
 
 .aside-resp-nav{
   color: white;
-  font-family: 'Open Sans';
+  font-family: $base-font-family;
   font-size: 1.1em;
   max-width: 80%;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: 400;
   padding: 1em 0;
 }
 
@@ -353,7 +418,3 @@ ol > li:before {
 .header{
   height: 70px;
 }
-
-
-
-

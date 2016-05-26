@@ -1,5 +1,29 @@
 # Open Election Data
 
+### Contributing or Editing User Guide Pages
+
+1. Determine if your post would best fit in **About The Data**, **Contributing**, or **Use** sections.
+
+2. Each section has it's own folder in the root folder that contains that sections pages. If you are adding a new page, copy an existing one to use as a template. If you're simply editing an existing page, locate the page in the .md files and open it up.
+
+3. You'll want to edit the front matter to start. Fields you'll want to hit are:
+
+  | label        | controls          |
+  | ------------- |:-------------:| 
+  | id      |  Title you'll see in the UserPage navigation |
+  | subject      | Must match the name of the section it's inside     |
+  | permalink | Where the page will be located. Should in the format ```guide/[_idname_]/   |
+  | previous | Where the 'previous' link will navigate to. Should be the page that comes prior to it int he     navigation menu.   |  
+  | next | Where the 'previous' link will navigate to. Should be the page that comes prior to it int he navigation menu.   |  
+
+4. Beneath there you can begin to edit or write up your guide. You can view an example of the formatting options at  [electiondata.github.io/guide/example/](electiondata.github.io/guide/example/).
+
+5. Save, and run ```gulp serve```. It should appear on the UserGuide. 
+
+### Adding a Resource to the User Guide
+
+The links to additional resources can be edited inside ```page-aside-content.html``` which you can find in ```app/_includes/```. To add a new one simply create a new ```<li><a href="[link to resource]>[resource name]</a></li>```element along the lines of the rest.
+
 ## Development
  
 ### Environment

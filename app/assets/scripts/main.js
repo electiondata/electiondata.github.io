@@ -8,6 +8,6 @@ $(window).load(function() {
 		directionNav: true,
   	prevText: "Previous Steps",
   	nextText: "Next Steps",
-  	slideshowSpeed: 6000,
+  	slideshow: false,
   });
 });
