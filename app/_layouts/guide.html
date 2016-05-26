@@ -2,47 +2,53 @@
 layout: default
 ---
 
-<section class="page page--docs">
-  <div class="page__body">
-    <div class="inner">
+{% include guide-header.html %}
 
-      {% include page-aside-respnav.html %}
-      <!-- page aside content -->
-      {% include page-aside-content.html %}
-      <!--/ page aside content -->
+<body>
 
-      <!-- page main content -->
-      <section class="page__main-container">
-        <div class="page__main-content">
-          <div class ="page__main-nav">
-            <div class = "page__main-nav--prev">
-              {% if page.previous != null %}
-              <a href="{{ page.previous }}">
-                <span class="collecticon collecticon-nav-left collecticons-chevron-left"></span> previous
-              </a>
-              {% endif %}
+  <section class="page page--docs">
+    <div class="page__body">
+      <div class="inner">
+
+        {% include page-aside-respnav.html %}
+        <!-- page aside content -->
+        {% include page-aside-content.html %}
+        <!--/ page aside content -->
+
+        <!-- page main content -->
+        <section class="page__main-container">
+          <div class="page__main-content">
+            <div class ="page__main-nav">
+              <div class = "page__main-nav--prev">
+                {% if page.previous != null %}
+                <a href="{{ page.previous }}">
+                  <span class="collecticon collecticon-nav-left collecticons-chevron-left"></span> previous
+                </a>
+                {% endif %}
+              </div>
+              <div class = "page__main-nav--next">
+                {% if page.next != null %}
+                <a href="{{ page.next }}">
+                  next <span class="collecticon collecticon-nav-right collecticons-chevron-right"></span>
+                </a>
+                {% endif %}
+              </div>
             </div>
-            <div class = "page__main-nav--next">
-              {% if page.next != null %}
-              <a href="{{ page.next }}">
-                next <span class="collecticon collecticon-nav-right collecticons-chevron-right"></span>
-              </a>
-              {% endif %}
-            </div>
+  	      {{ content }}
+
+          <div class = "page__main-nav--totop">
+            <a href="">Back to Top</a>
           </div>
-	      {{ content }}
-
-        <div class = "page__main-nav--totop">
-          <a href="">Back to Top</a>
-        </div>
-        
-        </div>
+          
+          </div>
 
 
-        </div>
-	    </section>
-      <!--/ page main content -->
+          </div>
+  	    </section>
+        <!--/ page main content -->
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+</body>
