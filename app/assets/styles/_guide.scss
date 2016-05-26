@@ -10,7 +10,7 @@
   display: table-cell;
   position: relative;
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
 
 .page__aside-maintitle{
@@ -229,10 +229,6 @@
   /* Determines indent from Numbered list*/
   ol, ul{
     padding-left: 2.5em;
-  }
-
-  @media screen and (min-width: $small-range){
-    margin: 1em 0;
   }
 }
 
