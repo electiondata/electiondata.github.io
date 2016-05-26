@@ -111,19 +111,21 @@ a {
 
 
 .rspv-nvbr {
-	position: relative;
 	float: right;
-	content: "";
-	background: url("../graphics/hamburger.svg");
 	top: 6px;
-	width: 24px;
-	height: 23px;
+	font-size:1.8em;
+	color: white;
+	cursor: pointer;
+	left: 0;
 
 	@media screen and (min-width: 777px) {
 	display: none;
   }
 
+}
 
+.rspv-nvbr-push{
+	float: right;
 }
 
 .rspv-nvbr:hover .rspv-dropdown {
@@ -131,13 +133,13 @@ a {
 }
 
 .rspv-dropdown {
+	z-index: 99;
 	display: none;
-	background-color: rgba (0, 0, 0, 0);
-/*	background-color: #072258;
-*/	padding-top: 28px;
 	position: absolute;
 	right: 0;
-	width: 180px;
+	width: 100%;
+	margin-top:15px;
+	padding-top: 35px;
 }
 
 .rspv-title {
@@ -148,9 +150,11 @@ a {
 	line-height: 3em;
 	font-weight: 400;
 	margin: 0;
-	padding-left: 10px;
-	text-align: left;
+	text-align: center;
 	border-bottom: 1px solid #274789;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
 }
 
 .rspv-title:hover {

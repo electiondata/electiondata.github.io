@@ -9,7 +9,22 @@
 <aside class="page-aside-resp">
   
   <div class="aside-resp-nav">
-    Use Guide Menu
+    <span class='aside-resp-title'>Use Guide Menu</span><i class = 'collecticons collecticons-chevron-right'></i>
+    <div class="aside-resp-menu">
+      <div class="aside-resp-menuitems">
+  {% if subPages == empty %}
+  No content
+  {% else %}
+      {% for sp in subPages %}
+          {% assign klass = "" %}
+          {% if page.url == sp.url %}
+            {% assign klass = "aside-menu-item--active" %}
+          {% endif %}
+        <li class = {{ klass }}><a href="{{ site.baseurl }}/{{ sp.permalink }}" title="View section" class="aside-menu-item">{{ sp.id }}</a></li>
+      {% endfor %}
+  {% endif %}     
+      </div>
+    </div>
   </div>
 
   <div class="page-aside-resp">
