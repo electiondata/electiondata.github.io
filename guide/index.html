@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+<!--[if lt IE 10]> <html class="lt-ie10 no-js"  lang=""> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+
+<head>
+
+    
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="Open Elections Documentation." />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+<title>Userguide</title>
+<meta name="description" content="">
+
+<link rel="canonical" href="/guide/">
+<link rel="alternate" type="application/rss+xml" title="ElectionData" href="/feed.xml">
+
+<link rel="author" type="text/plain" href="humans.txt" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<!-- metadata for Twitter Card -->
+<meta name="description" content="">
+<meta itemprop="name" content="">
+<meta itemprop="description" content="" >
+<meta itemprop="image" content="" >
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@OpenElections" />
+<meta name="twitter:title" content="Userguide — Open Elections">
+<meta name="twitter:description" content="Open Elections Documentation." />
+<meta name="twitter:image:src" content="/assets/graphics/meta/..." />
+<!--/ Twitter --> 
+
+<!-- OG -->
+<meta property="og:site_name" content="OpenElections" />
+<meta property="og:title" content="Userguide — Open Elections" />
+<meta property="og:url" content="/guide/" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Open Elections Documentation." />
+<meta property="og:image" content="/assets/graphics/meta/..." />
+<!--/ OG -->
+
+<link rel="shortcut icon" href="/assets/graphics/meta/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/assets/graphics/meta/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/graphics/meta/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/graphics/meta/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/graphics/meta/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/graphics/meta/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/graphics/meta/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/graphics/meta/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/graphics/meta/apple-touch-icon-152x152.png" />
+
+<link rel="stylesheet" href="/assets/styles/main-9e22cc9585.css">
+<link rel="author" type="text/plain" href="humans.txt" />
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:500,400|Roboto:300,800|Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+    
+</head>
+
+    <header class="header">
+	<div class="header-width-fix">
+		<div class="header-wrapper__guide">
+			<a href="/"><h1>Open Elections</h1></a>
+	 		<nav class="navbar">
+				<ul class="navbar-content">
+					<li class="navbar-title"><a href="/about/" class="hvr-underline-reveal">About</a></li>
+					<li class="navbar-title"><a href="/guide/" class="hvr-underline-reveal">User Guide</li>
+					<li class="navbar-title"><a href="/guide/" class="hvr-underline-reveal">Election Data</a></li>
+				</ul>
+			</nav>
+			<div class="rspv-menu">
+				<div class="rspv-nvbr"><i class = 'collecticons collecticons-hamburger-menu rspv-nvbr-push'></i>
+					<div class="rspv-dropdown">
+						<a href="/about/" class="rspv-animate"><li class="rspv-title">About</li></a>
+						<a href="/guide/" class="rspv-animate"><li class="rspv-title">Contribute</li></a>
+						<a href="/guide/" class="rspv-animate"><li class="rspv-title">Election Data</li></a>
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</div>
+</header>
+
+
+<body>
+
+  <section class="page page--docs">
+    <div class="page__body">
+      <div class="inner">
+
+        
+
+
+
+<aside class="page-aside-resp">
+  
+  <div class="aside-resp-nav">
+    <span class='aside-resp-title'>Use Guide Menu</span><i class = 'collecticons collecticons-chevron-right'></i>
+    <div class="aside-resp-menu">
+      <div class="aside-resp-menuitems">
+  
+      
+          
+          
+        <a href="/guide/" title="View section" class="aside-menu-item"><li class = aside-menu-item--active>Overview</li></a>
+      
+          
+          
+        <a href="/guide/usage/" title="View section" class="aside-menu-item"><li class = >Usage</li></a>
+      
+          
+          
+        <a href="/guide/other/" title="View section" class="aside-menu-item"><li class = >Other</li></a>
+      
+          
+          
+        <a href="/guide/finding/" title="View section" class="aside-menu-item"><li class = >Finding Data</li></a>
+      
+          
+          
+        <a href="/guide/cleaning/" title="View section" class="aside-menu-item"><li class = >Cleaning Data</li></a>
+      
+          
+          
+        <a href="/guide/adding/" title="View section" class="aside-menu-item"><li class = >Adding Data</li></a>
+      
+          
+          
+        <a href="/guide/getdata/" title="View section" class="aside-menu-item"><li class = >Getting Data</li></a>
+      
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="page-aside-resp">
+  </div>
+
+<!--   <div class = "page__aside-top">
+    <div class = "page__aside-maintitle">
+      Use Guide 
+    </div>
+    
+      <div class = "page__aside-category">
+  <div class = "page__aside-title">About</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+      <div class = "page__aside-category">
+  <div class = "page__aside-title">Contributing</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+          
+          
+        <li class = ><a href="/guide/finding/" title="View section" class="aside-menu-item">Finding Data</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/cleaning/" title="View section" class="aside-menu-item">Cleaning Data</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/adding/" title="View section" class="aside-menu-item">Adding Data</a></li>
+        
+      
+      	
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+      <div class = "page__aside-category">
+  <div class = "page__aside-title">Use</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+          
+          
+        <li class = ><a href="/guide/getdata/" title="View section" class="aside-menu-item">Getting Data</a></li>
+        
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+
+  </div>
+
+  <div class = "page__aside-bottom">
+    <div class = "page__aside-category">
+      <div class = "page__aside-title">Resources</div>
+      <ul class = "page__aside-resources aside-menu">
+        <li><a href="">Github</a></li>
+        <li><a href="">LibreOffice</a></li>
+        <li><a href="">OtherTools</a></li>
+      </ul>
+    </div>
+  </div>
+ -->
+</aside>
+
+        <!-- page aside content -->
+        
+
+
+
+<aside class="page-aside">
+ <div class = "page__aside-pusher">&nbsp;</div>
+	<div class = "page__aside-top">
+		<div class = "page__aside-maintitle">
+			<a href="/guide/">Use Guide</a>
+		</div>
+		
+			<div class = "page__aside-category">
+  <div class = "page__aside-title">About The Data</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+          
+          
+        <li class = aside-menu-item--active><a href="/guide/" title="View section" class="aside-menu-item">Overview</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/usage/" title="View section" class="aside-menu-item">Usage</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/other/" title="View section" class="aside-menu-item">Other</a></li>
+        
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+			<div class = "page__aside-category">
+  <div class = "page__aside-title">Contributing</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+          
+          
+        <li class = ><a href="/guide/finding/" title="View section" class="aside-menu-item">Finding Data</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/cleaning/" title="View section" class="aside-menu-item">Cleaning Data</a></li>
+        
+      
+      	
+          
+          
+        <li class = ><a href="/guide/adding/" title="View section" class="aside-menu-item">Adding Data</a></li>
+        
+      
+      	
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+			<div class = "page__aside-category">
+  <div class = "page__aside-title">Use</div>  
+  <nav class="page__aside-nav" role="navigation">
+  
+  <nav class="section__aside-nav" role="navigation">
+    <ul class="aside-menu">
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+      
+      	
+          
+          
+        <li class = ><a href="/guide/getdata/" title="View section" class="aside-menu-item">Getting Data</a></li>
+        
+      
+    </ul>
+  </nav>
+  		  
+  </nav>
+</div>
+
+
+  </div>
+
+	<div class = "page__aside-bottom">
+		<div class = "page__aside-category">
+			<div class = "page__aside-title">Resources</div>
+			<ul class = "page__aside-resources aside-menu">
+				<li><a href="">Github</a></li>
+				<li><a href="">LibreOffice</a></li>
+				<li><a href="">OtherTools</a></li>
+			</ul>
+		</div>
+	</div>
+
+</aside>
+
+        <!--/ page aside content -->
+
+        <!-- page main content -->
+        <section class="page__main-container">
+          <div class="page__main-content">
+            <div class ="page__main-nav">
+              <div class = "page__main-nav--prev">
+                
+                <a href="google.com">
+                  <span class="collecticon collecticon-nav-left collecticons-chevron-left"></span> previous
+                </a>
+                
+              </div>
+              <div class = "page__main-nav--next">
+                
+                <a href="google.com">
+                  next <span class="collecticon collecticon-nav-right collecticons-chevron-right"></span>
+                </a>
+                
+              </div>
+            </div>
+
+            <div class = "page__main-pusher">&nbsp;</div>
+  	      <h3 id="this-is-a-title">This is a Title</h3>
+
+<hr />
+
+<p>This is a detailed yet concise answer to that question to alleviate stress, find happiness, mend wounds, settle children, bring doves, relieve rain, &amp; just generally make the world a <a href="notaurl.com">better place</a>.</p>
+
+<p><a href="notaurl.com">This is stand alone link</a></p>
+
+<p><code class="highlighter-rouge">console.log("this is code")</code></p>
+
+<p>And this <code class="highlighter-rouge">console.log("is also code")</code> used in a block of text.</p>
+
+<hr />
+
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+
+<p>Strikethrough uses two tildes. <del>Scratch this.</del></p>
+
+<p><img src="/assets/graphics/satellite_image.png" alt="Image Description" /></p>
+
+<blockquote>
+  <p>This is a quote. Do the following things in order to do the things you want to do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</blockquote>
+
+<h3 id="by-steps">By Steps</h3>
+
+<ol>
+  <li>
+    <p>This is the first step in a process. Do the following things in order to do the things you want to do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </li>
+  <li>
+    <p>This is the second step in a process.</p>
+  </li>
+  <li>
+    <p>This is the third step in a process.</p>
+  </li>
+</ol>
+
+<h3 id="footnotes">Footnotes</h3>
+
+<ul>
+  <li>
+    <p>This is an un-ordered point. Do the following things in order to do the things you want to do. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </li>
+  <li>
+    <p>This is another footnote.</p>
+  </li>
+  <li>
+    <p>And yet another one.</p>
+  </li>
+</ul>
+
+<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”</p>
+
+
+          <div class = "page__main-nav--totop">
+            <a href="">Back to Top</a>
+          </div>
+          
+          </div>
+
+
+          </div>
+  	    </section>
+        <!--/ page main content -->
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<footer>
+	<div class="footer-content">
+		<ul class="footer-menu">
+			<li class="footer-nav"><a href="#github"><i class = 'collecticons collecticons-github'></i></a></li>
+			<li class="footer-nav"><a href="#twitter"><i class = 'collecticons collecticons-twitter'></i></a></li>
+		</ul>
+		<p class="credits"><a href="#credits">openelections@contact.com</a>
+	</div>
+</footer>
+
+<script src="/assets/scripts/vendor-e08fb2ed3b.js"></script>
+<script src="/assets/scripts/bundle-c862ea45ec.js"></script>
+
+
+</html>
