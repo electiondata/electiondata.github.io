@@ -1,11 +1,10 @@
 ---
 layout: guide
 parent: guide
-id: Overview
+id: Other
 
-subject: About
-
-permalink: guide/
+subject: About The Data
+permalink: guide/other/
 ---
 
 <h3>This is a commonly asked Question </h3>

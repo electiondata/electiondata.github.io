@@ -1,10 +1,14 @@
 ---
 layout: guide
 parent: guide
-id: Other
+id: Usage
 
-subject: About
-permalink: guide/other/
+subject: About The Data
+permalink: guide/usage/
+
+
+previous: google.com
+next: google.com
 ---
 
 <h3>This is a commonly asked Question </h3>
