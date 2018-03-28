@@ -1,5 +1,7 @@
 # Open Election Data
 
+:warning: This repo is **no longer maintained**. You can fork the code and use it, or contact info@developmentseed.org if you want to take over as maintainer.
+
 ### Contributing or Editing User Guide Pages
 
 1. Determine if your post would best fit in **About The Data**, **Contributing**, or **Use** sections.
